@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+</body>
+	<div class="boost-wrap">
+    <div class="boost-step">
+      <ol>
+        <li class="on">1. DB 접속 설정</li>
+        <li class="on">2. 콘솔매니저 설정</li>
+        <li>3. LOG 설정</li>
+        <li>4. 서비스 설정</li> 
+      </ol>
+    </div>
+    <div class="both-wrap">
+      <div class="left-area w-size1">
+        <p class="text">서버 생성 후 CManager 연결 Test를 실행해 주세요.</p>
+        <div class="form-wrap">
+          <div class="col">
+            <div class="label">서버 이름</div>
+            <div class="form"><input type="text" value="cmanager"></div>
+          </div>
+          <div class="col">
+            <div class="label">CManager Version</div>
+            <div class="form">
+              <select style="width:290px;">
+                <option>6.5.0</option>
+                <option>select2</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="label">ISC Version</div>
+            <div class="form">
+              <select style="width:290px;">
+                <option>6.5.0</option>
+                <option>select2</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="label">서버 IP(도메인)</div>
+            <div class="form"><input type="text"></div>
+          </div>
+          <div class="col">
+            <div class="label">서버 Port</div>
+            <div class="form"><input type="text"></div>
+          </div>
+          <div class="col">
+            <div class="label">Character Set</div>
+            <div class="form">
+              <select style="width:290px;">
+                <option>UTF-8</option>
+                <option>select2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-area">
+        <div class="server-wrap">
+          <dl>
+            <dt>서버이름</dt>
+            <dd>
+              <ul>
+                <li>
+                  <div class="name">cmanager</div>
+                  <div class="status"><span class="tag">테스트</span></div>
+                  <div class="menu">
+                    <button><i class="ico-setting"></i></button>
+                    <button><i class="ico-trash"></i></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="name">cmanager</div>
+                  <div class="status"><button class="tag">버튼타입</button></div>
+                  <div class="menu">
+                    <button><i class="ico-setting"></i></button>
+                    <button><i class="ico-trash"></i></button>
+                  </div>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrap">
+      <button type="button" class="btn-type2 st1">수정</button>
+      <div class="right">
+        <button type="button" class="btn-type2 st1">이전</button> 
+        <button type="button" class="btn-type2 st1">다음</button>
+        <button type="button" class="btn-type2 st2">취소</button>
+      </div>
+    </div>
+  </div>
+</html>

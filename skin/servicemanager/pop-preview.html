@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-preview">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:310px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-preview');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">미리보기</strong>
+        </div>
+        <div class="pop-body">
+          <div class="preview-wrap">
+            <p class="txt">‘서비스 반영’을 클릭하면 바로 서비스에 반영됩니다.</p>
+            <div class="popular-search-list">
+              <ol>
+                <li class="on"><em>1</em>에버랜드 <span class="right">-</span></li>
+                <li class="on"><em>2</em>용인 <span class="right"><spna class="dash">-</spna></span></li>
+                <li class="on"><em>3</em>와이즈넛 <span class="right"><span class="dash">-</span></span></li>
+                <li><em>4</em>푸바오 <span class="right"><spna class="dash"><spna class="dash">-</spna></spna></span></li>
+                <li><em>5</em>마이멜로디 <span class="right"><span class="dash">-</span></span></li>
+                <li><em>6</em>쿠로미 <span class="right"><spna class="dash">-</spna></span></li>
+                <li><em>7</em>산리오 <span class="right"><span class="dash">-</span></span></li>
+                <li><em>8</em>포켓몬 <span class="right"><spna class="dash">-</spna></span></li>
+                <li><em>9</em>어피치 <span class="right"><spna class="dash">-</spna></span></li>
+                <li><em>10</em>그로밋 <span class="right"><spna class="dash">-</spna></span></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-preview');">서비스반영</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-preview');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-preview');
+  </script>
+
+</body>
+
+</html>

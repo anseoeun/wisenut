@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="batch-upload">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#batch-upload');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">데이터 일괄 업로드 (엑셀파일)</strong>
+        </div>
+        <div class="pop-body">
+          <dl class="guide-box">
+            <dt><i class="ico-noti"></i>엑셀 파일 작성 요령</dt>
+            <dd>
+              <p>
+                한국어(<a href="javascript:void(0);" class="line">sample_ko</a>)
+                <br>검색어 | 분리정보 | 상의어 | 동위어 | 하위어 | 색인불용어여부 | 금칙어여부
+                <br>ex) 팬츠 | 0 | 의류 | 바지;대님 | 청바지 | N | Y
+              </p>
+              <p>
+                그외 언어(<a href="javascript:void(0);" class="line">sample_etc</a>)
+                <br>검색어 | 동의어 | 색인불용어여부 | 금칙어여부
+                <br>ex) pants | cargo | N | Y
+              </p>
+            </dd>
+          </dl>
+          <div class="upload-wrap">
+            <p class="txt">업로드할 파일을 선택해 주세요</p>
+            <div class="upload-box">
+              <input type="file">
+              <ul class="list">
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <div class="left">
+              <p class="txt c-red">파일을 선택해주세요.</p>
+            </div>
+            <div class="right"><button type="button" class="btn-type2 st1" onclick="popClose('#batch-upload');">업로드</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#batch-upload');
+  </script>
+
+</body>
+
+</html>

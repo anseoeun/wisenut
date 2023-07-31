@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+    <script>
+      $('.header').load('../common/header.html', function(){
+        gnbMenu();
+      });
+    </script>
+  </div>
+	<!-- container -->
+	<div class="container">
+		<div class="container-head">
+			<div class="user-menu">
+				<ul>
+					<li><a href="javascript:void(0);">사용자명</a></li>
+					<li><a href="javascript:void(0);">로그아웃</a></li>
+					<li><a href="javascript:void(0);">정보수정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+      <div class="title-wrap">
+        <h1 class="title-primary">오타교정</h1>
+        <div class="right">
+          <button type="button" class="btn-type1 st4">가져오기</button>
+          <button type="button" class="btn-type1 st1">동기화</button>
+        </div>
+      </div>
+
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-cont">
+          <div class="data-top">
+            <select>
+              <option>정타 키워드</option>
+              <option>정타 키워드2</option>
+            </select>
+            <div class="form-search">
+              <input type="text">
+              <button class="btn-type1 st1">검색</button>
+            </div>
+            <div class="right">
+              <button type="button" class="btn-type2 st1"><i class="ico-plus"></i>추가</button>
+              <button type="button" class="btn-type2 st5"><i class="ico-trash3"></i>삭제</button>
+            </div>
+          </div>
+          <!-- // dictionary-wrap -->
+
+          <!-- table -->
+          <div class="data-type1">
+            <table>
+                <colgroup>
+                    <col style="width:100px" />
+                    <col style="width:100px" />
+                    <col style="width:auto" />
+                    <col style="width:auto" />
+                    <col style="width:auto" />
+                    <col style="width:auto" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </th>
+                        <th>NO</th>
+                        <th>정타 키워드<i class="ico-dn"></i></th>
+                        <th>가중치</th>
+                        <th>오타 키워드</th>
+                        <th>등록일<i class="ico-up"></i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td><span class="c-navy">사과</span></td>
+                        <td>55</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td>사과</td>
+                        <td>55</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td>사과</td>
+                        <td>55</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+
+          <div class="paging-wrap">
+            <div class="left">
+              <button type="button" class="btn-type2 st5"><i class="ico-up2"></i>일괄 업로드</button>
+              <button type="button" class="btn-type2 st5"><i class="ico-dn2"></i>일괄 다운로드</button>
+            </div>
+            <div class="pagination">
+              <div class="paging">
+                <button class="btn-first"></button>
+                <button class="btn-prev"></button>
+                <div class="page">
+                  <button>1</button>
+                  <button class="on">2</button>
+                  <button>3</button>
+                  <button>4</button>
+                  <button>5</button>
+                </div>
+                <button class="btn-next"></button>
+                <button class="btn-last"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt-data-bottom-wrap">
+            <p class="txt-data-bottom">* 키워드 수정, 삭제 후에는 반드시 동기화를 실행해야 적용됩니다.</p>
+          </div>
+        </div>
+      </div>
+      <!-- // data-box -->
+    </div>
+		<!-- // content -->
+	</div>
+	<!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+
+
+
+</body>
+
+</html>

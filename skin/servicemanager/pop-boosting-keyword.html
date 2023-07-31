@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-boosting-keyword">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:800px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-boosting-keyword');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">부스팅 키워드 추가</strong>
+        </div>
+        <div class="pop-body">
+          <div class="form-wrap">
+            <div class="form">
+              <select>
+                <option>Cmanager 선택</option>
+                <option>Cmanager 선택2</option>
+              </select>
+              <select>
+                <option>ISC 선택</option>
+                <option>ISC 선택2</option>
+              </select>
+              <select>
+                <option>Collection 선택</option>
+                <option>Collection 선택2</option>
+              </select>
+              <select>
+                <option>BField 선택</option>
+                <option>BField 선택2</option>
+              </select>
+              <div class="right">
+                <div class="form-search w-sm">
+                  <input type="text" placeholder="키워드 입력">
+                  <button class="btn-type1 st1">검색</button>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <!-- move-data-wrap -->
+          <div class="move-data-wrap">
+            <div class="move-data depth">
+              <div class="data-list-box">
+                  <p class="tit">1 Depth</p>
+                  <div class="data-list">
+                    <ul>
+                      <li class="on"><button>3000980</button></li>
+                      <li><button>3000980</button></li>
+                      <li><button>3000980</button></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="data-list-box">
+                  <p class="tit">2 Depth</p>
+                  <div class="data-list">
+                    <ul>
+                      <li><button>3000980</button></li>
+                      <li class="on"><button>3000980</button></li>
+                      <li><button>3000980</button></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="data-list-box">
+                  <p class="tit">3 Depth</p>
+                  <div class="data-list">
+                    <ul>
+                      <li><button>3000980</button></li>
+                      <li><button>3000980</button></li>
+                      <li class="on"><button>3000980</button></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="move-data" id="direct" style="display:none;">
+              <textarea style="height: 220px;"></textarea>
+            </div>
+            <div class="btn-group-add">
+              <button class="btn-type2 st1"><span>선택한 카테고리 추가</span><i></i></button>
+            </div>
+            <div class="category-data">
+              <p class="txt">* 부스팅 추가 후 순위를 설정하고 저장해야 목록에 반영됩니다.</p>
+                <!-- table -->
+                <div class="data-type1 st2" style="max-height: 126px;">
+                  <table>
+                      <colgroup>
+                          <col style="width:15%" />
+                          <col style="width:auto" />
+                          <col style="width:15%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>순위</th>
+                            <th>카테고리명</th>
+                            <th>관리</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>
+                              <select class="sm" style="width:55px;">
+                                <option>1</option>
+                                <option>2</option>
+                              </select>
+                            </td>
+                            <td class="align-l">3000980: 3000085</td>
+                            <td><button><i class="ico-trash"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <select class="sm" style="width:55px;">
+                                <option>-1</option>
+                                <option>2</option>
+                              </select>
+                            </td>
+                            <td class="align-l">3000980: 3000085</td>
+                            <td><button><i class="ico-trash"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <select class="sm" style="width:55px;">
+                                <option>-1</option>
+                                <option>2</option>
+                              </select>
+                            </td>
+                            <td class="align-l">3000980: 3000085</td>
+                            <td><button><i class="ico-trash"></i></button></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <select class="sm" style="width:55px;">
+                                <option>-1</option>
+                                <option>2</option>
+                              </select>
+                            </td>
+                            <td class="align-l">3000980: 3000085</td>
+                            <td><button><i class="ico-trash"></i></button></td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- //table -->
+            </div>
+          </div>
+          <!-- // move-data-wrap -->  
+        
+
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-boosting-keyword');">확인</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-boosting-keyword');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-boosting-keyword');
+  </script>
+
+</body>
+
+</html>

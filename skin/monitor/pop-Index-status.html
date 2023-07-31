@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-Index-status">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:800px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-Index-status');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">이력</strong>
+        </div>
+        <div class="pop-body">
+          <!-- table -->
+          <div class="data-type1">
+            <table>
+                <colgroup>
+                    <col style="width:10%" />
+                    <col style="width:10%" />
+                    <col style="width:10%" />
+                    <col style="width:10%" />
+                    <col style="width:10%" />
+                    <col style="width:15%" />
+                    <col style="width:auto" />
+                </colgroup>
+                <thead>
+                    <tr>
+                      <th>Insert</th>
+                      <th>Update</th>
+                      <th>Delete</th>
+                      <th>Replace</th>
+                      <th>Total</th>
+                      <th>상태</th>
+                      <th>최종실행시간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td class="align-r">3571</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">3571</td>
+                      <td><i class="status" style="background:#4D9B7A"></i></td>
+                      <td class="align-l">2023-05-25 14:27:52 ~ 2023-05-25 14:27:52</td>
+                    </tr>
+                    <tr>
+                      <td class="align-r">3571</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">3571</td>
+                      <td><i class="status" style="background:#4D9B7A"></i></td>
+                      <td class="align-l">2023-05-25 14:27:52 ~ 2023-05-25 14:27:52</td>
+                    </tr>
+                    <tr>
+                      <td class="align-r">3571</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">3571</td>
+                      <td><i class="status" style="background:#F9B667"></i></td>
+                      <td class="align-l">2023-05-25 14:27:52 ~ </td>
+                    </tr>
+                    <tr>
+                      <td class="align-r">3571</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">0</td>
+                      <td class="align-r">3571</td>
+                      <td><i class="status" style="background:#FF0000"></i></td>
+                      <td class="align-l">2023-05-25 14:27:52 ~ </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="txt-data-bottom">* 히스토리는 최근 7건만 노출됩니다.</p>
+            <!-- //table -->
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-Index-status');">확인</button>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-Index-status');
+  </script>
+
+</body>
+
+</html>

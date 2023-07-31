@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-log-info">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:800px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-log-info');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">로그 보기</strong>
+        </div>
+        <div class="pop-body">
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label"><div class="lab">프로그램</div></div>
+                <div class="form">
+                  <div class="inp-chk-wrap">
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                        <span class="t">정보</span>
+                    </label>
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                        <span class="t">에러</span>
+                    </label>
+                  </div>
+                </div>
+              </div>              
+              <div class="row">
+                <div class="label"><div class="lab">기간</div></div>
+                <div class="form">
+                  <ul class="tab-type1">
+                    <li class="on"><a href="javascript:void(0);">최신로그</a></li>
+                    <li><a href="javascript:void(0);">직접선택</a></li>
+                  </ul>
+                  <div class="direct-input">
+                    <span class="inp-date">
+                      <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                    </span>
+                    <div class="inp-time">
+                      <div class="timepicker">
+                        <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+                      </div>
+                      <span class="dash">~</span>
+                      <div class="timepicker">
+                        <input type="text" value="11 : 50" readonly data-timepicki-tim="11" data-timepicki-mini="50">
+                      </div>
+                    </div>
+                    <button type="button" class="btn-type2 st1 btn-search">조회</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <textarea style="height:163px" readonly>readonly 상태</textarea>
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-log-info');">확인</button>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-log-info');
+  </script>
+
+</body>
+
+</html>

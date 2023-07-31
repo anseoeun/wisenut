@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+
+	<script src="js/jquery-3.6.4.min.js"></script>
+
+</head>
+<!-- style -->
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		padding: 20px;
+		font-family: Tahoma, Sans-Serif;
+		color: #333;
+		font-size: 11px;
+		background-color: #fff;
+	}
+
+	h1 {
+		color: #000;
+		letter-spacing: -2px;
+	}
+
+	h2 {
+		margin-top: 20px;
+		padding-left: 10px;
+		letter-spacing: -2px;
+		position: relative;
+		font-size: 18px;
+	}
+
+	h2:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 5px;
+		height: 5px;
+		background: #333;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+
+	.currentsite {
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 20px;
+	}
+
+	.mwork table {
+		width: 100%;
+		border-collapse: collapse;
+		border: 0px solid #666;
+		margin-top: 10px;
+	}
+
+	.mwork caption {
+		text-align: left;
+		font-size: 200%;
+		color: #999;
+	}
+
+	.mwork th {
+		padding: 6px;
+		border: 1px solid #fff;
+		color: #fff;
+		font-size: 110%;
+		background-color: #1F5DBE;
+	}
+
+	.mwork td {
+		height: 16px;
+		padding: 4px;
+		padding-left: 10px;
+		border: 1px solid #666;
+	}
+
+	.mwork a,
+	.mwork a:link,
+	#mwork a:visited {
+		color: #009;
+		text-decoration: none;
+	}
+
+	.mwork a:hover,
+	#mwork a:active {
+		color: #00f;
+		text-decoration: underline;
+	}
+
+	.mwork td:hover {
+		background-color: #ddd !important;
+	}
+
+	.title td {
+		background: #eee;
+	}
+</style>
+
+</head>
+
+<body>
+	<!-- sheet -->
+	<h1>Publishing Work Sheet</h1>
+
+	<div class="mwork">
+		<table>
+			<colgroup>
+				<col style="width:140px">
+				<col style="width:140px">
+				<col style="width:160px">
+				<col style="width:160px">
+				<col style="width:160px">
+				<col style="width:300px">
+				<col style="width:auto">
+			</colgroup>
+
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>4Depth</th>
+					<th>FileName/Link</th>
+					<th>Memo</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr class="title">
+					<td>공통</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>alert</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/common/alert.html">skin/common/alert.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>table scroll</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/common/table-scroll.html">skin/common/table-scroll.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>로그인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/login/login.html">skin/login/login.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>서비스관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>설치시작</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/start.html">skin/boost/start.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>설치매니저</td>
+					<td>DB접속설정1</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/step1.html">skin/boost/step1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>DB접속설정2</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/step1-2.html">skin/boost/step1-2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>콘솔매니저설정</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/step2.html">skin/boost/step2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>수정</td>
+					<td></td>
+					<td><a href="skin/boost/step2-modify.html">skin/boost/step2-modify.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>LOG설정</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/step3.html">skin/boost/step3.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>서비스설정</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/step4.html">skin/boost/step4.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>팝업</td>
+					<td>Log Path</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/boost/pop-logpath.html">skin/boost/pop-logpath.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>홈</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>홈</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/home.html">skin/home.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>모니터링</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>하드웨어</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/monitor/hardware.html">skin/monitor/hardware.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>서버프로그램</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/monitor/server-program.html">skin/monitor/server-program.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업 </td>
+					<td>등록정보 보기</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-regist-info.html">skin/monitor/pop-regist-info.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> </td>
+					<td>설정 보기</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-setting-info.html">skin/monitor/pop-setting-info.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> </td>
+					<td>로그 보기</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-log-info.html">skin/monitor/pop-log-info.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>일반프로그램 </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/monitor/general-program.html">skin/monitor/general-program.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> </td>
+					<td>팝업</td>
+					<td>실행하기</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-execution.html">skin/monitor/pop-execution.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> </td>
+					<td></td>
+					<td>SCD확인</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-scd-check.html">skin/monitor/pop-scd-check.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>수집색인배포현황 </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/monitor/collection-index-distribut-status.html">skin/monitor/collection-index-distribut-status.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td> </td>
+					<td>팝업</td>
+					<td>색인현황</td>
+					<td></td>
+					<td><a href="skin/monitor/pop-Index-status.html">skin/monitor/pop-Index-status.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>통계</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>검색추이</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/statistics/search-trend.html">skin/statistics/search-trend.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업 </td>
+					<td>엑셀 다운로드</td>
+					<td></td>
+					<td><a href="skin/common/pop-excel-download.html">skin/common/pop-excel-download.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>검색어순위</td>
+					<td>인기쿼리</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/statistics/search-rank-1.html">skin/statistics/search-rank-1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>실패쿼리</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/statistics/search-rank-2.html">skin/statistics/search-rank-2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업 </td>
+					<td>제외 키워드 추가</td>
+					<td></td>
+					<td><a
+							href="skin/statistics/pop-negative-keywords-add.html">skin/statistics/pop-negative-keywords-add.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> </td>
+					<td>제외 키워드 수정</td>
+					<td></td>
+					<td><a
+							href="skin/statistics/pop-negative-keywords-modify.html">skin/statistics/pop-negative-keywords-modify.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> </td>
+					<td>사전등록</td>
+					<td></td>
+					<td><a href="skin/statistics/pop-vocabulary-add.html">skin/statistics/pop-vocabulary-add.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>얼럿</td>
+					<td>실행정지</td>
+					<td></td>
+					<td><a href="skin/statistics/pop-stop-running.html">skin/statistics/pop-stop-running.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>컬렉션순위 </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/statistics/collection-ranking.html">skin/statistics/collection-ranking.html</a></td>
+					<td></td>
+				</tr>
+				<tr class="title">
+					<td>서비스관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>사전</td>
+					<td>한국어</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/dictionary-kr.html">skin/servicemanager/dictionary-kr.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>영어</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/dictionary-eng.html">skin/servicemanager/dictionary-eng.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>어휘추가/수정</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-vocabulary.html">skin/servicemanager/pop-vocabulary.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>어휘추가/수정(영어,중국어)</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-vocabulary2.html">skin/servicemanager/pop-vocabulary2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>어휘추가/수정(일본어)</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-vocabulary3.html">skin/servicemanager/pop-vocabulary3.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>일괄업로드</td>
+					<td></td>
+					<td><a href="skin/common/pop-batch-upload.html">skin/common/pop-batch-upload.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>엑셀 다운로드</td>
+					<td></td>
+					<td><a href="skin/common/pop-excel-download.html">skin/common/pop-excel-download.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>동기화</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-sync.html">skin/servicemanager/pop-sync.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>파일 업로드 </td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-file-upload.html">skin/servicemanager/pop-file-upload.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>자동완성</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/autocomplete.html">skin/servicemanager/autocomplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>자동완성 추가/수정</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-autocomplete.html">skin/servicemanager/pop-autocomplete.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>일괄업로드2</td>
+					<td></td>
+					<td><a href="skin/common/pop-batch-upload2.html">skin/common/pop-batch-upload2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>인기검색어</td>
+					<td>관리</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/popular-search-manage.html">skin/servicemanager/popular-search-manage.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>히스토리</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/popular-search-history.html">skin/servicemanager/popular-search-history.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>우선적용 키워드 추가 / 수정</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-priority-keyword.html">skin/servicemanager/pop-priority-keyword.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>제외 키워드 추가 / 수정</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-negative-keyword.html">skin/servicemanager/pop-negative-keyword.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>미리보기</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-preview.html">skin/servicemanager/pop-preview.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>얼럿 </td>
+					<td>서비스 반영</td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/alert-service-reflection.html">skin/servicemanager/alert-service-reflection.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td> </td>
+					<td>전체 초기화</td>
+					<td></td>
+					<td><a href="skin/servicemanager/alert-full-reset.html">skin/servicemanager/alert-full-reset.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>추천검색어</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/suggested-search.html">skin/servicemanager/suggested-search.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>추천검색어 추가 / 수정</td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/pop-suggestion-search.html">skin/servicemanager/pop-suggestion-search.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>얼럿 </td>
+					<td>추천검색어 즉시 반영</td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/alert-suggestion-reflection.html">skin/servicemanager/alert-suggestion-reflection.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>카테고리부스팅</td>
+					<td>컬렉션 관리</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/category-boosting1.html">skin/servicemanager/category-boosting1.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>부스팅 관리</td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/servicemanager/category-boosting2.html">skin/servicemanager/category-boosting2.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>서버 추가</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-server-add.html">skin/servicemanager/pop-server-add.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>동기화</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-sync.html">skin/servicemanager/pop-sync.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>부스팅 키워드 추가</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-boosting-keyword.html">skin/servicemanager/pop-boosting-keyword.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>오타교정</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/spell/spell.html">skin/spell/spell.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>오타교정 키워드 추가 / 수정</td>
+					<td></td>
+					<td><a href="skin/spell/pop-spell-keyword.html">skin/spell/pop-spell-keyword.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>테마검색</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/theme/theme.html">skin/theme/theme.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>테마 추가</td>
+					<td></td>
+					<td><a href="skin/theme/pop-theme-add.html">skin/theme/pop-theme-add.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>랭킹관리</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="skin/ranking/ranking.html">skin/ranking/ranking.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>필드가중치 보기</td>
+					<td></td>
+					<td><a href="skin/ranking/pop-field-weights.html">skin/ranking/pop-field-weights.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>검색어 보기</td>
+					<td></td>
+					<td><a href="skin/ranking/pop-search-view.html">skin/ranking/pop-search-view.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>실시간인기검색어</td>
+					<td>실시간인기검색어 관리</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/realtime-popular-search1.html">skin/servicemanager/realtime-popular-search1.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>히스토리</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/realtime-popular-search2.html">skin/servicemanager/realtime-popular-search2.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>실시간통계규칙</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/realtime-popular-search3.html">skin/servicemanager/realtime-popular-search3.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>실시간통계환경</td>
+					<td></td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/realtime-popular-search4.html">skin/servicemanager/realtime-popular-search4.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>팝업</td>
+					<td>조회(시간선택)</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-time-select.html">skin/servicemanager/pop-time-select.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>라벨 추가</td>
+					<td></td>
+					<td><a href="skin/servicemanager/pop-label-add.html">skin/servicemanager/pop-label-add.html</a></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>통계환경 수정</td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/pop-statistics-environment.html">skin/servicemanager/pop-statistics-environment.html</a>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>통계대상 서버 추가</td>
+					<td></td>
+					<td><a
+							href="skin/servicemanager/pop-statistics-server.html">skin/servicemanager/pop-statistics-server.html</a>
+					</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- //sheet -->
+</body>
+
+</html>

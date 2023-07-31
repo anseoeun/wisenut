@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+    <script>
+      $('.header').load('../common/header.html', function(){
+        gnbMenu();
+      });
+    </script>
+  </div>
+	<!-- container -->
+	<div class="container">
+		<div class="container-head">
+			<div class="user-menu">
+				<ul>
+					<li><a href="javascript:void(0);">사용자명</a></li>
+					<li><a href="javascript:void(0);">로그아웃</a></li>
+					<li><a href="javascript:void(0);">정보수정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+      <div class="title-wrap">
+        <h1 class="title-primary">추천검색어</h1>
+        <div class="right">
+          <button type="button" class="btn-type1 st1">추 천검색어 즉시 반영</button>
+        </div>
+      </div>
+
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-cont">
+          <div class="data-top">
+            <select>
+              <option>전체</option>
+              <option>전체2</option>
+            </select>
+            <select>
+              <option>적용기간 전체</option>
+              <option>적용기간 전체2</option>
+            </select>
+            <div class="form-search">
+              <input type="text">
+              <button class="btn-type1 st1">검색</button>
+            </div>
+            <div class="right">
+              <button type="button" class="btn-type2 st1"><i class="ico-plus"></i>추가</button>
+              <button type="button" class="btn-type2 st5"><i class="ico-trash3"></i>삭제</button>
+            </div>
+          </div>
+          <!-- // dictionary-wrap -->
+
+          <!-- table -->
+          <div class="data-type1">
+            <table>
+                <colgroup>
+                    <col style="width:100px" />
+                    <col style="width:100px" />
+                    <col style="width:12%" />
+                    <col style="width:12%" />
+                    <col style="width:auto" />
+                    <col style="width:12%" />
+                    <col style="width:12%" />
+                    <col style="width:15%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </th>
+                        <th>ID</th>
+                        <th>대표어</th>
+                        <th>사용자 정의단어</th>
+                        <th>URL</th>
+                        <th>컬렉션</th>
+                        <th>서비스타입</th>
+                        <th>적용기간</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td><span class="c-navy">그로밋</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td>그로밋</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td>그로밋</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>1000</td>
+                        <td>그로밋</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+
+          <div class="paging-wrap">
+            <div class="left">
+              <button type="button" class="btn-type2 st5"><i class="ico-up2"></i>일괄 업로드</button>
+              <button type="button" class="btn-type2 st5"><i class="ico-dn2"></i>일괄 다운로드</button>
+            </div>
+            <div class="pagination">
+              <div class="paging">
+                <button class="btn-first"></button>
+                <button class="btn-prev"></button>
+                <div class="page">
+                  <button>1</button>
+                  <button class="on">2</button>
+                  <button>3</button>
+                  <button>4</button>
+                  <button>5</button>
+                </div>
+                <button class="btn-next"></button>
+                <button class="btn-last"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="txt-data-bottom-wrap">
+            <p class="txt-data-bottom">* 데이터 설정을 생성하고 키워드를 관리 할 수 있습니다.</p>
+            <p class="txt-data-bottom">* 생성 데이터 정보 : Cache Target 1 2023.06.01 00:00:50 생성</p>
+            <p class="txt-data-bottom">* 서비스타입 Y : 항상 서비스 N : 적용 기간내에만 서비스</p>
+          </div>
+        </div>
+      </div>
+      <!-- // data-box -->
+    </div>
+		<!-- // content -->
+	</div>
+	<!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+
+
+
+</body>
+
+</html>

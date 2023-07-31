@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-file-upload">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:800px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-file-upload');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">파일 업로드 </strong>
+        </div>
+        <div class="pop-body">
+          <!-- table -->
+          <div class="data-type1">
+            <table>
+                <colgroup>
+                    <col style="width:80px" />
+                    <col style="width:12%" />
+                    <col style="width:15%" />
+                    <col style="width:auto" />
+                    <col style="width:25%" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>서버</th>
+                        <th>ISC</th>
+                        <th>경로</th>
+                        <th>사전갱신일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                      <tr>
+                        <td>
+                          <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          </label>
+                        </td>
+                        <td>cmanager</td>
+                        <td>isc1</td>
+                        <td class="align-l">C:\sf1-v5-package\SF1_v530_bld23\knowledge\korean</td>
+                        <td>2023-05-15 14:33:56</td>
+                      </tr>
+                      <tr>
+                        <td colspan="5">사전경로를 가져올 수 없습니다. ISC의 사전 경로 설정을 확인해주세요.</td>
+                      </tr>
+                </tbody>
+            </table>
+          </div>
+          <!-- //table -->
+
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-file-upload');">확인</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-file-upload');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-file-upload');
+  </script>
+
+</body>
+
+</html>

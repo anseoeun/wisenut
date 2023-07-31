@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="batch-upload">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#batch-upload');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">데이터 일괄 업로드 (엑셀파일)</strong>
+        </div>
+        <div class="pop-body">
+          <dl class="guide-box">
+            <dt><i class="ico-noti"></i>엑셀 파일 작성 요령</dt>
+            <dd>
+              <p>
+                (<a href="javascript:void(0);" class="line">sample_ark</a>)
+                <br>키워드| 퀵링크이름| 퀵링크URL| 서비스ID| 서비스명| 가중치| 반영여부
+                <br>ex) 꽃시장|양재꽃시장|http://www.flower.net/|_ALL_|전체|100|Y
+              </p>
+            </dd>
+          </dl>
+          <div class="upload-wrap">
+            <p class="txt">업로드할 파일을 선택해 주세요</p>
+            <div class="upload-box">
+              <input type="file">
+              <ul class="list">
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+                <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <div class="left">
+              <p class="txt c-red">파일을 선택해주세요.</p>
+            </div>
+            <div class="right"><button type="button" class="btn-type2 st1" onclick="popClose('#batch-upload');">업로드</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#batch-upload');
+  </script>
+
+</body>
+
+</html>

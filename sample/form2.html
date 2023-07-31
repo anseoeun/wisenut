@@ -1,0 +1,2510 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/jquery-3.6.4.min.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/jquery.minicolors.js"></script>
+<script src="../js/timepicki.js"></script>
+<script src="../js/ui.js"></script>
+</head>
+<body>
+<body style="padding:50px;">
+  <div class="form-wrap">
+    <div class="col">
+      <div class="label">Vender</div>
+      <div class="form">
+        <select style="width:302px;">
+          <option>select</option>
+          <option>select2</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+      <div class="label">DatabaseName</div>
+      <div class="form"><input type="text"></div>
+    </div>
+    <p class="txt">* 데이터베이스가 사용 가능한 상태인지 반드시 확인해 주세요.</p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="form-wrap main-form">
+    <div class="tbl">
+      <div class="row">
+        <div class="form">
+          <select>
+            <option>컬렉션 전체</option>
+            <option>컬렉션 전체2</option>
+          </select>
+          <ul class="tab-type1">
+            <li class="on"><a href="javascript:void(0);">일간</a></li>
+            <li><a href="javascript:void(0);">주간</a></li>
+            <li><a href="javascript:void(0);">월간</a></li>
+            <li><a href="javascript:void(0);">연간</a></li>
+            <li><a href="javascript:void(0);">직접선택</a></li>
+          </ul>
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker" value="2023-05-27"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            <span class="dash">~</span>
+            <div class="date"><input type="text" class="datepicker" value="2023-05-30"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span>
+          <button type="button" class="btn-type1 st1 btn-search">조회</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="form-wrap main-form">
+    <div class="tbl">
+      <div class="row">
+        <div class="label">서버</div>
+        <div class="form">
+          <select>
+            <option>cmanager1</option>
+            <option>cmanager2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label">프로그램</div>
+        <div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">전체</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">ISC</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">SC</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">Distributor</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">Etc</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label"><div class="lab">시작일</div></div>
+        <div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker sm"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span>
+          <div class="inp-time">
+            <div class="timepicker sm">
+              <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><div class="lab">종료일</div></div>
+        <div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker sm"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span>
+          <div class="inp-time">
+            <div class="timepicker sm">
+              <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label"><div class="lab">시작일</div></div>
+        <div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span>
+          <div class="inp-time">
+            <div class="timepicker">
+              <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><div class="lab">종료일</div></div>
+        <div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span>
+          <div class="inp-time">
+            <div class="timepicker">
+              <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+
+          <!-- data-box -->
+          <div class="data-box" style="width:365px">
+            <div class="box-tit">실시간 인기검색어 히스토리</div>
+            <!-- 필터링리스트 -->
+            <div class="box-cont">
+              <div class="data-top col">
+                <span class="inp-date">
+                  <div class="date"><input type="text" class="datepicker sm"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                  <span class="dash">~</span>
+                  <div class="date"><input type="text" class="datepicker sm"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                </span>
+                <div class="form-search sm full">
+                <input type="text">
+                  <button class="btn-type1 st1">검색</button>
+                </div>
+              </div>
+              <div class="time-box">
+                <ol>
+                  <li>
+                    <div class="time"><i class="ico-folder"></i><span>15시</span></div>
+                    <ol>
+                      <li>
+                        <div class="time"><i class="ico-folder"></i><span>15시</span></div>
+                        <ol>
+                          <li>
+                            <label class="inp-chk">
+                                <span class="inp"><input type="radio"><span class="ic"></span></span>
+                                <span class="t">30분</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="inp-chk">
+                                <span class="inp"><input type="radio"><span class="ic"></span></span>
+                                <span class="t">40분</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="inp-chk">
+                                <span class="inp"><input type="radio"><span class="ic"></span></span>
+                                <span class="t">50분</span>
+                            </label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio"><span class="ic"></span></span>
+                            <span class="t">40분</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio"><span class="ic"></span></span>
+                            <span class="t">50분</span>
+                        </label>
+                      </li>
+                    </ol>
+                  </li>
+                  <li>
+                    <div class="time"><i class="ico-folder"></i><span>16시</span></div>
+                    <ol>
+                      <li>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio"><span class="ic"></span></span>
+                            <span class="t">30분</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio"><span class="ic"></span></span>
+                            <span class="t">40분</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio"><span class="ic"></span></span>
+                            <span class="t">50분</span>
+                        </label>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+              <!-- // time-box -->
+            </div>
+          </div>
+          <!-- // data-box -->
+
+  <br>
+  <br>
+  <br>
+
+  <div class="form-wrap">
+    <div class="col">
+      <div class="label-wrap">
+        <div class="label">Log Path</div>
+        <div class="right">
+          <button type="button" class="btn-type4 st1">찾기</button>
+        </div>
+      </div>
+      <div class="form"><input type="text"></div>
+    </div>
+    <div class="col">
+      <div class="label">Log Level</div>
+      <div class="form">
+        <div class="inp-chk-wrap">
+          <label class="inp-chk">
+              <span class="inp"><input type="radio"><span class="ic"></span></span>
+              <span class="t">마스터</span>
+          </label>
+          <label class="inp-chk">
+              <span class="inp"><input type="radio" disabled><span class="ic"></span></span>
+              <span class="t">disabled</span>
+          </label>
+          <label class="inp-chk">
+              <span class="inp"><input type="radio" readonly><span class="ic"></span></span>
+              <span class="t">readonly</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <p class="txt">* ERROR : 에러 메세지 출력</p>
+    <p class="txt">* WARN : 경고 메시지와 에러 메시지 출력</p>
+    <p class="txt">* INFO : 모든 메시지 출력 (표준, 경고, 에러)</p>
+    <p class="txt">* DEBUG : 디버그 메시지 출력</p>		
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <h2>팝업로그 폼</h2>
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label"><div class="lab">프로그램</div></div>
+        <div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">정보</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">에러</span>
+            </label>
+          </div>
+        </div>
+      </div>              
+      <div class="row">
+        <div class="label"><div class="lab">기간</div></div>
+        <div class="form">
+          <ul class="tab-type1">
+            <li class="on"><a href="javascript:void(0);">최신로그</a></li>
+            <li><a href="javascript:void(0);">직접선택</a></li>
+          </ul>
+          <div class="direct-input">
+            <span class="inp-date">
+              <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            </span>
+            <div class="inp-time">
+              <div class="timepicker">
+                <input type="text" value="11 : 29" data-timepicki-tim="10" data-timepicki-mini="29">
+              </div>
+              <span class="dash">~</span>
+              <div class="timepicker">
+                <input type="text" value="11 : 50" data-timepicki-tim="11" data-timepicki-mini="50">
+              </div>
+            </div>
+            <button type="button" class="btn-type2 st1 btn-search">조회</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <h2>실행하기</h2>
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label"><div class="lab">Mode</div></div>
+        <div class="form">
+          <select>
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label"><div class="lab">Target</div></div>
+        <div class="form">
+          <select>
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <p class="txt c-red">* 실행된 프로그램은 강제로 정지시킬 수 없습니다.</p>
+  </div>
+
+  <br>
+  <br>
+  <br>
+<h2>제외 키워드 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어</div></div>
+				<div class="form">
+          <div class="form-txt">후쿠오카</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">적용기간</div></div>
+				<div class="form">
+          <div class="inp-radio-col-wrap">
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="p"><span class="ic"></span></span>
+                  <span class="t">영구제외</span>
+              </label>
+            </div>
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="p"><span class="ic"></span></span>
+                  <span class="t">사용자정의</span>
+              </label>
+              <div class="radio-next-level">
+                <span class="inp-date">
+                  <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                  <span class="dash">~</span>
+                  <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+  
+  <br>
+  <br>
+  <br>
+
+  <h2>사전등록</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어</div></div>
+				<div class="form">
+          <div class="form-txt">푸바오</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">언어</div></div>
+				<div class="form">
+          <select>
+            <option>한국어</option>
+            <option>영어</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">분리정보</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">상위어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">색인불용어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label> 
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색금칙어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <br>
+  <br>
+  <h2>어휘 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어</div></div>
+				<div class="form">
+          <div class="form-txt">푸바오</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">언어</div></div>
+				<div class="form">
+          <select>
+            <option>한국어</option>
+            <option>영어</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">분리정보</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">상위어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">색인불용어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label> 
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색금칙어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <br>
+  <br>
+  <h2>어휘 추가(사전)한국어</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어*</div></div>
+				<div class="form">
+          <input type="text" disabled>
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">분리정보</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">상위어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">동의어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">하위어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">색인불용어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label> 
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색금칙어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label>
+        </div>
+			</div>
+		</div>
+	</div>
+
+  <br>
+  <br>
+  <h2>어휘 추가(사전)영어, 중국어</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어*</div></div>
+				<div class="form">
+          <input type="text" disabled>
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">분리정보</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">동의어</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">색인불용어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label> 
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">검색금칙어 여부</div></div>
+				<div class="form">
+          <label class="inp-chk">
+            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+        </label>
+        </div>
+			</div>
+		</div>
+	</div>
+
+
+  <br>
+  <br>
+  <h2>자동완성 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">키워드*</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">키워드*</div></div>
+				<div class="form">
+          <input type="text" disabled>
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">퀵링크 이름</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">퀵링크 URL</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">서비스 아이디</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select> 
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">가중치</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">1 ~ 100 사이의 정수</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">반영 여부</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+		</div>
+	</div>  
+
+
+  <br>
+  <br>
+  <h2>우선적용 키워드 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">검색어*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">순위</div></div>
+				<div class="form">
+          <input type="text">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">신규</span>
+            </label>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">등락폭</div></div>
+				<div class="form">
+          <input type="text" style="width:155px;">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">적용기간</div></div>
+				<div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            <span class="dash">~</span>
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span> 
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="c"><span class="ic"></span></span>
+                <span class="t">선택 컬렉션 적용</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="c"><span class="ic"></span></span>
+                <span class="t">전체 컬렉션 적용</span>
+            </label>
+          </div>
+        </div>
+			</div>
+	  </div>
+	</div>
+			
+
+  <br>
+  <br>
+  <h2>추천검색어 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">컬렉션</div></div>
+				<div class="form">
+          <select>
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">URL</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">대표어*</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">대표어*</div></div>
+				<div class="form">
+          <input type="text" disabled>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">사용자 정의단어*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">서비스타입</div></div>
+				<div class="form">
+          <input type="text">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">Y : 항상 서비스</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">N : 적용 기간내에만 서비스</span>
+            </label>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">적용기간</div></div>
+				<div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            <span class="dash">~</span>
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span> 
+        </div>
+			</div>
+		</div>
+	</div>  
+
+
+  <br>
+  <br>
+  <h2>서버 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">cmanager</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">ISC</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">컬렉션</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">카테고리 필드</div></div>
+				<div class="form">
+          <div class="tbl">
+			      <div class="row">
+              <div class="label"><div class="lab">필드명</div></div>
+              <div class="form">
+                <select style="min-width:160px;">
+                  <option>select</option>
+                  <option>select2</option>
+                </select>
+              </div>
+            </div>
+			      <div class="row">
+              <div class="label"><div class="lab">분류구분</div></div>
+              <div class="form">
+                <input type="text" style="width:160px;">
+              </div>
+            </div>
+			      <div class="row">
+              <div class="label"><div class="lab">Depth 구분</div></div>
+              <div class="form">
+                <input type="text" style="width:160px;">
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">서치 필드</div></div>
+				<div class="form">
+          <div class="inp-check-col-wrap">
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">title</span>
+              </label>
+            </div>
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">content</span>
+              </label>
+            </div>
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">content</span>
+              </label>
+            </div>
+            <div class="col">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">docregstatus</span>
+              </label>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>  
+
+
+  <br>
+  <br>
+  <h2>오타교정 키워드 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">정타 키워드*</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">가중치*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt">1~100 사이 정수</p>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">오타 키워드</div></div>
+				<div class="form">
+          <textarea style="height:90px;"></textarea>
+          <p class="txt">키워드가 여러개일때 ; 으로 구분</p>
+        </div>
+			</div>
+		</div>
+	</div>  
+
+
+  <br>
+  <br>
+  <h2>테마 추가</h2>
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label wide"><div class="lab">서비스아이디</div></div>
+        <div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">테마명</div></div>
+        <div class="form">
+          <input type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">테마키워드</div></div>
+        <div class="form">
+          <input type="text">
+          <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">서비스타입</div></div>
+        <div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">Y : 항상 서비스</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">N : 적용 기간내에만 서비스</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">적용기간</div></div>
+        <div class="form">
+          <span class="inp-date">
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            <span class="dash">~</span>
+            <div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+          </span> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">테마타입</div></div>
+        <div class="form">
+          <div class="row">
+            <div class="inp-chk-wrap">
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="b"><span class="ic"></span></span>
+                  <span class="t">에디터</span>
+              </label>
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="b"><span class="ic"></span></span>
+                  <span class="t">URL</span>
+              </label>
+            </div>
+            <input type="text" class="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <br>
+  <br>
+  <h2>필드가중치 보기</h2>
+  <div class="grid-txt-list">
+    <ul>
+      <li>
+        <div class="left">title</div><div class="right">0</div>
+      </li>
+      <li>
+        <div class="left">content</div> <div class="right">0</div>
+      </li>
+      <li>
+        <div class="left">electronicdocflag</div> <div class="right">0</div>
+      </li>
+      <li>
+        <div class="left">docregstatus</div> <div class="right">0</div>
+      </li>
+      <li>
+        <div class="left">keepperiod</div> <div class="right">0</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="form-wrap small-gap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">title</div></div>
+				<div class="form">
+          <div class="form-txt align-c">0</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">content</div></div>
+				<div class="form">
+          <div class="form-txt align-c">0</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">electronicdocflag</div></div>
+				<div class="form">
+          <div class="form-txt align-c">0</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">docregstatus</div></div>
+				<div class="form">
+          <div class="form-txt align-c">0</div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">keepperiod</div></div>
+				<div class="form">
+          <div class="form-txt align-c">0</div>
+        </div>
+			</div>
+		</div>
+	</div>  
+
+
+  <br>
+  <br>
+  <h2>라벨 추가</h2>
+  <p class="pop-top-txt">* 라벨 ID와 라벨 이름 입력 후 매칭시킬 컬렉션을 선택해 주세요. 한 ID에 다수의 컬렉션 그룹을 추가할 수 있습니다.</p>
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label wide"><div class="lab">라벨아이디</div></div>
+        <div class="form">
+          <input type="text">
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">라벨 이름</div></div>
+        <div class="form">
+          <input type="text">
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- move-data-wrap -->
+  <div class="move-data-wrap">
+    <div class="inp-chk-wrap">
+      <label class="inp-chk">
+          <span class="inp"><input type="radio" name="label" value="1" checked><span class="ic"></span></span>
+          <span class="t">목록선택</span>
+      </label>
+      <label class="inp-chk">
+          <span class="inp"><input type="radio" name="label" value="2"><span class="ic"></span></span>
+          <span class="t">직접입력</span>
+      </label>
+    </div>
+    <div class="move-data" id="list">
+      <div class="data-list-box">
+          <p class="tit">컬렉션 목록</p>
+          <div class="data-list">
+            <ul>
+              <li><button>collection</button></li>
+              <li class="on"><button>collection</button></li>
+            </ul>
+          </div>
+      </div>
+      <div class="arrow">
+        <button><i class="ico-data-right"></i></button>
+        <button><i class="ico-data-left"></i></button>
+      </div>
+      <div class="data-list-box">
+          <p class="tit">선택 컬렉션</p>
+          <div class="data-list">
+            <ul>
+              <li><button>sample</button></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="move-data" id="direct" style="display:none;">
+      <textarea style="height: 242px;"></textarea>
+    </div>
+    <div class="btn-group-add">
+      <button class="btn-type2 st1"><span>컬렉션 그룹 추가</span><i></i></button>
+    </div>
+    <div class="data-list" style="height:100px;">
+      <ul>
+        <li class="fix"><div class="item">컬렉션 그룹 <div class="right">관리</div></div></li>
+        <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+        <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+        <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+        <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+      </ul>
+    </div>
+  </div>
+  <!-- // move-data-wrap -->
+
+  <script>
+    $('[ name="label"]').on('change', function(){
+      if($(this).val() == 1){
+        $('#list').show();
+        $('#direct').hide();
+      }else{
+        $('#list').hide();
+        $('#direct').show();
+      }
+    });
+  </script>
+
+  
+
+<br>
+<br>
+<h2>부스팅 키워드 추가</h2>
+<div class="form-wrap">
+  <div class="form">
+    <select>
+      <option>Cmanager 선택</option>
+      <option>Cmanager 선택2</option>
+    </select>
+    <select>
+      <option>ISC 선택</option>
+      <option>ISC 선택2</option>
+    </select>
+    <select>
+      <option>Collection 선택</option>
+      <option>Collection 선택2</option>
+    </select>
+    <select>
+      <option>BField 선택</option>
+      <option>BField 선택2</option>
+    </select>
+    <div class="right">
+      <div class="form-search w-sm">
+        <input type="text" placeholder="키워드 입력">
+        <button class="btn-type1 st1">검색</button>
+      </div>
+    </div>
+  </div>
+</div>  
+<!-- move-data-wrap -->
+<div class="move-data-wrap">
+  <div class="move-data depth">
+    <div class="data-list-box">
+        <p class="tit">1 Depth</p>
+        <div class="data-list">
+          <ul>
+            <li class="on"><button>3000980</button></li>
+            <li><button>3000980</button></li>
+            <li><button>3000980</button></li>
+          </ul>
+        </div>
+    </div>
+    <div class="data-list-box">
+        <p class="tit">2 Depth</p>
+        <div class="data-list">
+          <ul>
+            <li><button>3000980</button></li>
+            <li class="on"><button>3000980</button></li>
+            <li><button>3000980</button></li>
+          </ul>
+        </div>
+    </div>
+    <div class="data-list-box">
+        <p class="tit">3 Depth</p>
+        <div class="data-list">
+          <ul>
+            <li><button>3000980</button></li>
+            <li><button>3000980</button></li>
+            <li class="on"><button>3000980</button></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="move-data" id="direct" style="display:none;">
+    <textarea style="height: 220px;"></textarea>
+  </div>
+  <div class="btn-group-add">
+    <button class="btn-type2 st1"><span>선택한 카테고리 추가</span><i></i></button>
+  </div>
+  <div class="category-data">
+    <p class="txt">* 부스팅 추가 후 순위를 설정하고 저장해야 목록에 반영됩니다.</p>
+      <!-- table -->
+      <div class="data-type1">
+        <table>
+            <colgroup>
+                <col style="width:15%" />
+                <col style="width:auto" />
+                <col style="width:15%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>순위</th>
+                  <th>카테고리명</th>
+                  <th>관리</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>
+                    <select class="sm" style="width:55px;">
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </td>
+                  <td class="align-l">3000980: 3000085</td>
+                  <td><button><i class="ico-trash"></i></button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <select class="sm" style="width:55px;">
+                      <option>-1</option>
+                      <option>2</option>
+                    </select>
+                  </td>
+                  <td class="align-l">3000980: 3000085</td>
+                  <td><button><i class="ico-trash"></i></button></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- //table -->
+  </div>
+</div>
+<!-- // move-data-wrap -->
+
+<br>
+<br>
+<h2>데이터 일괄 업로드 (엑셀파일)</h2>
+  <dl class="guide-box">
+    <dt><i class="ico-noti"></i>엑셀 파일 작성 요령</dt>
+    <dd>
+      <p>
+        한국어(<a href="javascript:void(0);" class="line">sample_ko</a>)
+        <br>검색어 | 분리정보 | 상의어 | 동위어 | 하위어 | 색인불용어여부 | 금칙어여부
+        <br>ex) 팬츠 | 0 | 의류 | 바지;대님 | 청바지 | N | Y
+      </p>
+      <p>
+        그외 언어(<a href="javascript:void(0);" class="line">sample_etc</a>)
+        <br>검색어 | 동의어 | 색인불용어여부 | 금칙어여부
+        <br>ex) pants | cargo | N | Y
+      </p>
+    </dd>
+  </dl>
+  <div class="upload-wrap">
+    <p class="txt">업로드할 파일을 선택해 주세요</p>
+    <div class="upload-box">
+      <input type="file">
+      <ul class="list">
+        <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+        <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+        <li><span>파일파일파일파일파일.excel</span> <button class="del"></button></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <h2>조회</h2>
+  <p class="pop-top-txt">* 시간을 선택해 주세요</p>
+  <div class="time-box">
+    <ol>
+      <li>
+        <div class="time"><i class="ico-folder"></i><span>15시</span></div>
+        <ol>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="15"><span class="ic"></span></span>
+                <span class="t">30분</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="15"><span class="ic"></span></span>
+                <span class="t">40분</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="15"><span class="ic"></span></span>
+                <span class="t">50분</span>
+            </label>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <div class="time"><i class="ico-folder"></i><span>16시</span></div>
+        <ol>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="16"><span class="ic"></span></span>
+                <span class="t">30분</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="16"><span class="ic"></span></span>
+                <span class="t">40분</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="16"><span class="ic"></span></span>
+                <span class="t">50분</span>
+            </label>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+  
+
+  <br>
+  <br>
+  <h2>통계환경 수정</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">포트</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">JAVA 프로세스 메모리</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto"><input type="text"></div>
+            <div class="right vb">Mbyte</div>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">로그 레벨</div></div>
+				<div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">ERROR</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">WARN</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">INFO</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">DEBUG</span>
+            </label>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">인기검색어 목록 최소 개수</div></div>
+				<div class="form">
+          <select style="min-width:160px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>
+		</div>
+	</div>  
+  
+
+  <br>
+  <br>
+  <h2>통계대상 서버 추가</h2>
+  <div class="form-wrap">
+    <div class="tbl">
+      <div class="row">
+        <div class="label wide"><div class="lab">Cmanager ID</div></div>
+        <div class="form">
+          <select style="min-width:160px;">
+            <option>cmanager</option>
+            <option>cmanager</option>
+          </select>
+          <select style="min-width:160px;">
+            <option>isc1</option>
+            <option>isc1</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">QueryLog Type</div></div>
+        <div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+              <span class="t">common</span>
+              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+            </label>
+            <label class="inp-chk">
+              <span class="t">collection</span>
+              <span class="inp"><input type="checkbox" name="a"><span class="ic"></span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="label wide"><div class="lab">Character Set</div></div>
+        <div class="form">
+          <select style="min-width:160px;">
+            <option>EUC-KR</option>
+            <option>EUC-KR</option>
+          </select>
+          <p class="txt">검색페이지의 w3SetCodePage값과 동일해야 합니다.</p>
+        </div>
+      </div>
+    </div>
+    <p class="txt c-red">* 통계용 예제 데이터가 있습니다. 확인 버튼을 선택하면  데이터가 삭제됩니다.</p>
+  </div>
+  
+
+  <br>
+  <br>
+  <h2>스케줄</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label wide"><div class="lab">실행 주기</div></div>
+				<div class="form">
+          <ul class="chk-list">
+            <li>
+              <div class="cell">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                </label>
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분에</span>
+              </div>
+            </li>
+            <li>
+              <div class="cell">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                </label>
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">시간마다</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분에</span>
+              </div>
+            </li>
+            <li>
+              <div class="cell">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                </label>
+                <span class="tt">매시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분 간격으로</span>
+              </div>
+            </li>
+            <li>
+              <div class="inp-chk-wrap">
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">항상주별캐시 생성</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox" name="a"><span class="ic"></span></span>
+                    <span class="t">항상월별캐시 생성</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">실행가능기간</div></div>
+				<div class="form">
+          <div class="row">
+            <span class="inp-date">
+              <div class="date"><input type="text" class="datepicker" value="2023-05-27" disabled><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+              <span class="dash">~</span>
+              <div class="date"><input type="text" class="datepicker" value="2023-05-30" disabled><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+            </span>
+            <div class="right">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">항상</span>
+              </label>
+            </div>
+          </div>
+        </div>
+			</div>
+			<div class="row">
+				<div class="label wide"><div class="lab">실행가능시간</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="inp-time">
+              <div class="timepicker">
+                <input type="text" value="11 : 29" data-timepicki-tim="10" data-timepicki-mini="29">
+              </div>
+              <span class="dash">~</span>
+              <div class="timepicker">
+                <input type="text" value="11 : 50" data-timepicki-tim="11" data-timepicki-mini="50">
+              </div>
+            </div>
+            <div class="right">
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">항상</span>
+              </label>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>  
+  
+
+  <br>
+  <br>
+  <h2>스케줄 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+      <div class="row">
+				<div class="label wide"><div class="lab">서버</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">스케줄ID</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">프로그램 종류</div></div>
+				<div class="form">
+          <select style="min-width:200px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">프로그램 명</div></div>
+				<div class="form">
+          <select style="min-width:200px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div> 
+			
+			<div class="row">
+				<div class="label wide"><div class="lab">실행 주기</div></div>
+				<div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="cycle" value="day" checked><span class="ic"></span></span>
+                <span class="t">매일</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="cycle" value="week"><span class="ic"></span></span>
+                <span class="t">매주</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="cycle" value="month"><span class="ic"></span></span>
+                <span class="t">매월</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="cycle" value="direct"><span class="ic"></span></span>
+                <span class="t">직접입력</span>
+            </label>
+          </div>
+          <!-- 매일 -->
+          <ul class="chk-list cycle-day">
+            <li>
+              <div class="cell">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                </label>
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분에</span>
+              </div>
+            </li>
+            <li>
+              <div class="cell">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                </label>
+                <span class="tt">매시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분 간격으로</span>
+              </div>
+            </li>      
+          </ul>   
+          <!-- 매주 -->   
+          <ul class="chk-list cycle-week" style="display:none;">
+            <li>
+              <div class="inp-chk-wrap">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="week" value="everyweek" checked><span class="ic"></span></span>
+                    <span class="t">매주</span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="inp-chk-wrap">
+                <label class="inp-chk">
+                    <span class="inp"><input type="radio" name="week" value="selectweek"><span class="ic"></span></span>
+                    <span class="t">주 선택</span>
+                </label>
+              </div>
+            </li>
+            <li class="selectweek" style="display:none">
+              <div class="inp-chk-wrap">
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">첫째주</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">둘째주</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">셋째주</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">넷째주</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">다섯째주</span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="inp-chk-wrap">
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">일</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">월</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">화</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">수</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">목</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">금</span>
+                </label>
+                <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    <span class="t">토</span>
+                </label>
+              </div>
+            </li>
+            <li>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분에</span>
+              </div>
+            </li>
+          </ul>
+          <!-- 매월 -->
+          <ul class="chk-list cycle-month" style="display:none;">
+            <li>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">일</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>01</option>
+                  <option>12</option>
+                </select>
+                <span class="tt">시</span>
+              </div>
+              <div class="cell">
+                <select style="min-width:55px;">
+                  <option>50</option>
+                  <option>59</option>
+                </select>
+                <span class="tt">분에</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+			</div>
+		</div>
+    <div class="cycle-direct" style="display:none;">
+      <div class="rule-check">
+        <textarea style="height:80px;"></textarea>
+        <div class=" btn-wrap">
+          <div class="right"><button type="button" class="btn-type4 st1">규칙검사</button></div>
+        </div>
+      </div>
+      <div class="help-text">
+        <strong class="c-red">[도움말]</strong>
+        <ul class="dash">
+          <li>
+            지정 날짜에 스케쥴 실행 : D 날짜 시 분
+             <br>예) D 1 3 0 : 매월 1일 3시 0분
+          </li>
+          <li>
+            지정 요일에 스케쥴 실행 : W 주 요일 시 분
+            <br>예) W 2ND MON 3 0 : 매월 둘째주 월요일 3시 0분
+          </li>
+          <li>
+            특수기호 : *(매), /(and) 예) D * 0/6/12/18 0 : 매일 0시, 6시, 12시, 18시 0분
+            <br>예) W * SUN * 0: 매월 매주 일요일 매시 0분
+          </li>
+        </ul>
+      </div>
+    </div>
+	</div>  
+  
+  <script>
+    $('[name="cycle"]').on('change', function(){
+      let val = $(this).val();
+      console.log(val);
+      $('[class*=cycle-]').hide();
+      $('.cycle-'+val).show();
+    });
+    $('[name="week"]').on('change', function(){
+      let val = $(this).val();
+      console.log(val);
+      if(val == 'everyweek') $('.selectweek').hide();
+      else $('.selectweek').show();
+    });
+  </script>
+
+  <br>
+  <br>
+  <h2>SCD 수정</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+      <div class="row">
+				<div class="label wide"><div class="lab">경로</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">내용</div></div>
+				<div class="form">
+          <textarea style="height:160px;"></textarea>
+          <p class="txt">
+            선택한 문서를 삭제하거나 수정하면 해당 컬렉션의 SCD 디렉토리에 SCD가 생성됩니다.
+            <br>검색에 적용시키기 위해서는 해당 컬렉션의 색인작업이 수행되어야 합니다.
+          </p>
+        </div>
+			</div> 
+    </div>
+	</div>  
+
+  <br>
+  <br>
+  <h2>프로그램 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+      <div class="row">
+				<div class="label wide"><div class="lab">프로그램명*</div></div>
+				<div class="form">
+          <input type="text">
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Type*</div></div>
+				<div class="form">
+          <div class="tbl">
+			      <div class="row">
+              <div class="label">
+                <div class="lab">
+                  <label class="inp-chk">
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                      <span class="t">서버프로그램</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form">
+                <select style="min-width:190px;">
+                  <option>select</option>
+                  <option>select2</option>
+                </select>
+              </div>
+            </div>
+			      <div class="row">
+              <div class="label">
+                <div class="lab">
+                  <label class="inp-chk">
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                      <span class="t">일반프로그램</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form">
+                <select style="min-width:190px;" disabled>
+                  <option>select</option>
+                  <option>select2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">On Start</div></div>
+				<div class="form">
+          <label class="inp-chk">
+              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+              <span class="t">설정</span>
+          </label>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Auto Start</div></div>
+				<div class="form">
+          <label class="inp-chk">
+              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+              <span class="t">설정</span>
+          </label>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">알림 메일</div></div>
+				<div class="form">
+          <label class="inp-chk">
+              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+              <span class="t">설정</span>
+          </label>
+          <p class="txt">해당 프로그램 오류시 알림메일 전송여부</p>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">모니터모드*</div></div>
+				<div class="form">
+          <div class="inp-chk-wrap">
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">Pid</span>
+            </label>
+            <label class="inp-chk">
+                <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                <span class="t">Port</span>
+            </label>
+          </div>
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Config Path*</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Script Path*</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">License Path*</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Log Path*</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Stdout Path*</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">Args</div></div>
+				<div class="form">
+          <div class="row">
+            <div class="auto">
+              <input type="text">
+            </div>
+            <div class="right">
+              <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+            </div>
+          </div>
+        </div>
+			</div> 
+    </div>
+	</div>  
+
+  <br>
+  <br>
+  <h2>정보 수정</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+      <div class="row">
+				<div class="label wide"><div class="lab">목록개수</div></div>
+				<div class="form">
+          <div class="row">
+            <span class="t-label">상단 : </span>
+            <input type="text" style="width:114px;">
+            <span class="t-label">하단 : </span>
+            <input type="text" style="width:114px;">
+          </div>
+          <p class="txt">* 상/하단 합이 20이하</p>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">최대 노출 글자수</div></div>
+				<div class="form">
+          <input type="text" style="width:190px">
+          <span class="tt">자</span>
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">글자 색상</div></div>
+				<div class="form">
+          <input type="text" class="colorpicker" data-control="hue" value="#ff6161" style="width:190px;">
+        </div>
+			</div> 
+      <div class="row">
+				<div class="label wide"><div class="lab">글자 크기</div></div>
+				<div class="form">
+          <select style="min-width:190px;">
+            <option>select</option>
+            <option>select2</option>
+          </select>
+        </div>
+			</div>  
+    </div>
+	</div>  
+
+  <br>
+  <br>
+  <h2>서버별 메일 발송여부</h2>
+  <ul class="check-list">
+    <li>
+      <label class="inp-chk">
+          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+          <span class="t">Administrator</span>
+      </label>
+    </li>
+    <li>
+      <label class="inp-chk">
+          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+          <span class="t">user</span>
+      </label>
+    </li>
+    <li>
+      <label class="inp-chk">
+          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+          <span class="t">malee</span>
+      </label>
+    </li>
+  </ul>  
+
+  <br>
+  <br>
+  <h2>메일수신자</h2>
+  <div class="mail-reciver-wrap">
+    <div class="reciver-box">
+      <strong class="tit">그룹</strong>
+      <div class="box">
+        <ul class="selc-list">
+          <li><button>Admin Group</button></li>
+          <li class="on"><button>Group</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="reciver-box">
+      <strong class="tit">사용자</strong>
+      <div class="box">
+        <ul class="chk-list">
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">Administrator</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">user</span>
+            </label>
+          </li>
+          <li>
+            <label class="inp-chk">
+                <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                <span class="t">malee</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="reciver-box">
+      <strong class="tit">수신자</strong>
+      <div class="box">
+        <ul class="selc-list">
+          <li><button>Administrator</button></li>
+          <li><button>user</button></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>  
+
+  <br>
+  <br>
+  <h2>그룹 추가</h2>
+  <div class="form-wrap">
+		<div class="tbl">
+      <div class="row">
+				<div class="label wide"><div class="lab">그룹명*</div></div>
+				<div class="form">
+          <input type="text">
+          <p class="txt c-red">중복된 그룹명입니다.</p>
+        </div>
+			</div> 
+    </div>
+	</div>
+
+  <div class="menu-access-wrap">
+    <p class="txt">메뉴 액세스 권한*</p>
+    <!-- table -->
+    <div class="data-type1" style="max-height: 400px;">
+      <table>
+          <colgroup>
+              <col style="width:auto" />
+              <col style="width:15%" />
+              <col style="width:15%" />
+          </colgroup>
+          <thead>
+              <tr>
+                  <th>권한항목</th>
+                  <th>
+                    <label class="inp-chk">
+                        <span class="t">읽기</span>
+                        <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    </label>
+                  </th>
+                  <th>
+                    <label class="inp-chk">
+                        <span class="t">쓰기</span>
+                        <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    </label>
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="depth1"><span class="icon"><i class="ico-monitor"></i></span>모니터링</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">하드웨어</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">서버프로그램</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">일반프로그램</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">수집색인배포현황</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth1"><span class="icon"><i class="ico-statistics"></i></span>통계</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">검색추이</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">검색어순위</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">컬렉션순위</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth1"><span class="icon"><i class="ico-service"></i></span>서비스관리</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">검색추이</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="depth2">검색추이</div>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+              <td>
+                <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <!-- //table -->
+  </div>
+
+  <br>
+  <br>
+  <h2>색인어보기</h2>
+  <div class="grid-txt-list auto">
+    <ul>
+      <li>
+        <div class="left">컬렉션</div><div class="right">sample</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="index-words-wrap">
+    <p class="txt">색인어 내용</p>
+    <!-- table -->
+    <div class="data-type2" style="max-height: 220px;">
+      <table>
+          <colgroup>
+            <col style="width:20%" />
+            <col style="width:20%" />
+            <col style="width:20%" />
+            <col style="width:auto" />
+          </colgroup>
+          <thead>
+              <tr>
+                <th>필드명</th>
+                <th>색인방식</th>
+                <th>토큰</th>
+                <th>색인어</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+            <tr>
+              <td>LIKE</td>
+              <td>like</td>
+              <td>후르츠</td>
+              <td>
+                르츠
+                <br>후르
+                <br>후르츠
+              </td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+    <!-- //table -->
+  </div>
+
+</body>
+
+</html>

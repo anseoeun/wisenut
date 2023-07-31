@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+<script src="js/jquery-3.6.4.min.js"></script>
+
+</head>
+<!-- style -->
+<style type="text/css">
+  *{margin:0;padding:0;}
+  body {padding:20px; font-family:Tahoma, Sans-Serif; color:#333; font-size:11px; background-color:#fff;}
+  h1 {color:#000; letter-spacing:-2px;}
+  h2 {margin-top:20px;padding-left:10px;letter-spacing:-2px;position:relative;font-size:18px;}
+  h2:before{content:'';display:block;position:absolute;top:50%;left:0;width:5px;height:5px;background:#333;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+  .currentsite {display:block; position:absolute; right:40px; top:20px;}
+  .mwork table {width:100%; border-collapse:collapse; border:0px solid #666;margin-top:10px;}
+  .mwork caption {text-align:left; font-size:200%; color:#999;}
+  .mwork th {padding:6px; border:1px solid #fff; color:#fff; font-size:110%; background-color:#1F5DBE;}
+  .mwork td {height:16px; padding:4px; padding-left:10px; border:1px solid #666;}
+  .mwork a,
+  .mwork a:link, #mwork a:visited {color:#009; text-decoration:none;}
+  .mwork a:hover, #mwork a:active {color:#00f; text-decoration:underline;}
+  .mwork td:hover {background-color:#ddd !important;}
+
+  .title td{background:#eee;}
+</style>
+<!-- //style -->
+<script>
+  $(function(){
+    let data =[
+
+      ["공통", "title", "", ""],
+      ["", "alert", "", "", "", "skin/common/alert.html", ""],
+      ["", "table scroll", "", "", "", "skin/common/table-scroll.html", ""],
+      ["로그인", "title", "", "", ""],
+      ["", "로그인", "", "", "", "skin/login/login.html", ""],
+      ["서비스관리", "title", "", "", ""],
+      ["", "설치시작", "", "", "", "skin/boost/start.html", ""],
+      ["", "설치매니저", "DB접속설정1", "", "", "skin/boost/step1.html", ""],
+      ["", "", "DB접속설정2", "", "", "skin/boost/step1-2.html", ""],
+      ["", "", "콘솔매니저설정", "", "", "skin/boost/step2.html", ""],
+      ["", "", "", "수정", "", "skin/boost/step2-modify.html", ""],
+      ["", "", "LOG설정", "", "", "skin/boost/step3.html", ""],
+      ["", "", "서비스설정", "", "", "skin/boost/step4.html", ""],
+      ["", "팝업", "Log Path", "", "", "skin/boost/pop-logpath.html", ""],
+      // 홈
+      ["홈", "title", "", "", ""],      
+      ["", "홈", "", "", "", "skin/home.html", ""],
+      // 모니터링
+      ["모니터링", "title", "", "", ""],      
+      ["", "하드웨어", "", "", "", "skin/monitor/hardware.html", ""],
+      ["", "서버프로그램", "", "", "", "skin/monitor/server-program.html", ""],
+      ["", "", "팝업 ", "등록정보 보기", "", "skin/monitor/pop-regist-info.html", ""],
+      ["", "", " ", "설정 보기", "", "skin/monitor/pop-setting-info.html", ""],
+      ["", "", " ", "로그 보기", "", "skin/monitor/pop-log-info.html", ""],
+      ["", "일반프로그램 ", "", "", "", "skin/monitor/general-program.html", ""],
+      ["", " ", "팝업", "실행하기", "", "skin/monitor/pop-execution.html", ""],
+      ["", " ", "", "SCD확인", "", "skin/monitor/pop-scd-check.html", ""],
+      ["", "수집색인배포현황 ", "", "", "", "skin/monitor/collection-index-distribut-status.html", ""],
+      ["", " ", "팝업", "색인현황", "", "skin/monitor/pop-Index-status.html", ""],
+      // 통계
+      ["통계", "title", "", "", ""],      
+      ["", "검색추이", "", "", "", "skin/statistics/search-trend.html", ""],
+      ["", "", "팝업 ", "엑셀 다운로드", "", "skin/common/pop-excel-download.html", ""],      
+      ["", "검색어순위", "인기쿼리", "", "", "skin/statistics/search-rank-1.html", ""],
+      ["", "", "실패쿼리", "", "", "skin/statistics/search-rank-2.html", ""],
+      ["", "", "팝업 ", "제외 키워드 추가", "", "skin/statistics/pop-negative-keywords-add.html", ""],      
+      ["", "", " ", "제외 키워드 수정", "", "skin/statistics/pop-negative-keywords-modify.html", ""],      
+      ["", "", " ", "사전등록", "", "skin/statistics/pop-vocabulary-add.html", ""],      
+      ["", "", "얼럿", "실행정지", "", "skin/statistics/pop-stop-running.html", ""],      
+      ["", "컬렉션순위  ", "", "", "", "skin/statistics/collection-ranking.html", ""],
+      // 서비스관리
+      ["서비스관리", "title", "", "", ""],
+      ["", "사전", "한국어", "", "", "skin/servicemanager/dictionary-kr.html", ""],
+      ["", "", "영어", "", "", "skin/servicemanager/dictionary-eng.html", ""],
+      ["", "", "팝업", "어휘추가/수정", "", "skin/servicemanager/pop-vocabulary.html", ""],
+      ["", "", "", "어휘추가/수정(영어,중국어)", "", "skin/servicemanager/pop-vocabulary2.html", ""],
+      ["", "", "", "어휘추가/수정(일본어)", "", "skin/servicemanager/pop-vocabulary3.html", ""],
+      ["", "", "", "일괄업로드", "", "skin/common/pop-batch-upload.html", ""],
+      ["", "", "", "엑셀 다운로드", "", "skin/common/pop-excel-download.html", ""],
+      ["", "", "", "동기화", "", "skin/servicemanager/pop-sync.html", ""],
+      ["", "", "", "파일 업로드 ", "", "skin/servicemanager/pop-file-upload.html", ""],
+
+      ["", "자동완성", "", "", "", "skin/servicemanager/autocomplete.html", ""],
+      ["", "", "팝업", "자동완성 추가/수정", "", "skin/servicemanager/pop-autocomplete.html", ""],
+      ["", "", "", "일괄업로드2", "", "skin/common/pop-batch-upload2.html", ""],
+
+      ["", "인기검색어", "관리", "", "", "skin/servicemanager/popular-search-manage.html", ""],
+      ["", "", "히스토리", "", "", "skin/servicemanager/popular-search-history.html", ""],
+      ["", "", "팝업", "우선적용 키워드 추가 / 수정", "", "skin/servicemanager/pop-priority-keyword.html", ""],
+      ["", "", "", "제외 키워드 추가 / 수정", "", "skin/servicemanager/pop-negative-keyword.html", ""],
+      ["", "", "", "미리보기", "", "skin/servicemanager/pop-preview.html", ""],
+      ["", "", "얼럿 ", "서비스 반영", "", "skin/servicemanager/alert-service-reflection.html", ""],
+      ["", "", " ", "전체 초기화", "", "skin/servicemanager/alert-full-reset.html", ""],
+
+      
+      ["", "추천검색어", "", "", "", "skin/servicemanager/suggested-search.html", ""],
+      ["", "", "팝업", "추천검색어 추가 / 수정", "", "skin/servicemanager/pop-suggestion-search.html", ""],
+      ["", "", "얼럿 ", "추천검색어 즉시 반영", "", "skin/servicemanager/alert-suggestion-reflection.html", ""],
+
+      ["", "카테고리부스팅", "컬렉션 관리", "", "", "skin/servicemanager/category-boosting1.html", ""],
+      ["", "", "부스팅 관리", "", "", "skin/servicemanager/category-boosting2.html", ""],
+      ["", "", "팝업", "서버 추가", "", "skin/servicemanager/pop-server-add.html", ""],
+      ["", "", "", "동기화", "", "skin/servicemanager/pop-sync.html", ""],
+      ["", "", "", "부스팅 키워드 추가", "", "skin/servicemanager/pop-boosting-keyword.html", ""],
+
+      ["", "오타교정", "", "", "", "skin/spell/spell.html", ""],
+      ["", "", "팝업", "오타교정 키워드 추가 / 수정", "", "skin/spell/pop-spell-keyword.html", ""],
+
+      ["", "테마검색", "", "", "", "skin/theme/theme.html", ""],
+      ["", "", "팝업", "테마 추가", "", "skin/theme/pop-theme-add.html", ""],
+
+      ["", "랭킹관리", "", "", "", "skin/ranking/ranking.html", ""],
+      ["", "", "팝업", "필드가중치 보기", "", "skin/ranking/pop-field-weights.html", ""],
+      ["", "", "", "검색어 보기", "", "skin/ranking/pop-search-view.html", ""],
+
+      ["", "실시간인기검색어", "실시간인기검색어 관리", "", "", "skin/servicemanager/realtime-popular-search1.html", ""],
+      ["", "", "히스토리", "", "", "skin/servicemanager/realtime-popular-search2.html", ""],
+      ["", "", "실시간통계규칙", "", "", "skin/servicemanager/realtime-popular-search3.html", ""],
+      ["", "", "실시간통계환경", "", "", "skin/servicemanager/realtime-popular-search4.html", ""],
+      ["", "", "팝업", "조회(시간선택)", "", "skin/servicemanager/pop-time-select.html", ""],
+      ["", "", "", "라벨 추가", "", "skin/servicemanager/pop-label-add.html", ""],
+      ["", "", "", "통계환경 수정", "", "skin/servicemanager/pop-statistics-environment.html", ""],
+      ["", "", "", "통계대상 서버 추가", "", "skin/servicemanager/pop-statistics-server.html", ""],
+
+      // 데이터관리     
+      ["데이터관리", "title", "", "", ""],      
+      ["", "데이터관리", "", "", "", "skin/indexdatamanager/data-manage.html", ""], 
+      ["", "", "팝업", "색인어보기", "", "skin/indexdatamanager/pop-index-word.html", ""],      
+      ["", "", "", "SCD 수정", "", "skin/indexdatamanager/pop-scd-modify.html", ""],      
+      ["", "", "얼럿", "데이터수정 즉시반영", "", "skin/indexdatamanager/alert-data-modify-reflection.html", ""],      
+
+      // 스케줄     
+      ["스케줄", "title", "", "", ""],      
+      ["", "스케줄", "", "", "", "skin/schedule/schedule.html", ""], 
+      ["", "", "팝업", "통계스케줄 수정", "", "skin/schedule/pop-statistics-schedule.html", ""],      
+      ["", "", "", "콘솔매니저 스케줄 추가", "", "skin/schedule/pop-console-manager-schedule.html", ""],      
+      ["", "", "얼럿", "강제 실행", "", "skin/schedule/alert-forced-execution.html", ""],      
+
+      // 환경설정 
+      // ["환경설정", "title", "", "", ""],      
+      // ["", "시스템환경", "콘솔매니저", "", "", "skin/consolemanager/console-manager.html", ""], 
+      // ["", "", "DB환경", "", "", "skin/config/db-environment.html", ""], 
+      // ["", "", "통계규칙", "", "", "skin/config/statistical-rules.html", ""], 
+      // ["", "", "통계환경", "", "", "skin/config/statistical-environment.html", ""], 
+      // ["", "", "라이선스", "", "", "skin/config/license.html", ""], 
+      // ["", "", "팝업", "서버 추가 / 수정", "", "skin/consolemanager/pop-server.html", ""],      
+      // ["", "", "", "프로그램 추가 / 수정", "", "skin/consolemanager/pop-program.html", ""],      
+      // ["", "", "", "DB 정보 수정", "", "skin/config/pop-db-info.html", ""],      
+      // ["", "", "", "DB 환경 수정", "", "skin/config/pop-db-environment.html", ""],      
+      // ["", "", "", "라벨 추가", "", "skin/config/pop-label-add.html", ""],      
+      // ["", "", "", "통계환경 수정", "", "skin/config/pop-statistical-environment.html", ""],      
+      // ["", "", "", "통계대상 서버 추가", "", "skin/config/pop-statistic-target-server.html", ""],      
+      // ["", "", "", "라이선스 갱신", "", "skin/config/pop-license-renewal.html", ""],      
+      // ["", "", "얼럿", "설정정보 가져오기", "", "skin/consolemanager/alert-setting-info.html", ""],      
+
+      // ["", "부가서비스", "캐시서버", "", "", "skin/config/cache-server.html", ""], 
+      // ["", "", "자동완성", "", "", "skin/config/autocomplete.html", ""], 
+      // ["", "", "외부서버", "", "", "skin/config/external-server.html", ""], 
+      // ["", "", "팝업", "Cache Server 수정", "", "skin/config/pop-cache-server.html", ""],           
+      // ["", "", "", "정보 수정", "", "skin/config/pop-.html", ""],           
+      // ["", "", "", "서비스 아이디 보기", "", "skin/config/pop-service-id.html", ""],           
+      // ["", "", "", "외부서버 추가", "", "skin/config/pop-external-server.html", ""],           
+
+      // ["", "시스템알림", "알림환경설정", "", "", "skin/config/noti-setting.html", ""], 
+      // ["", "", "알림로그", "", "", "skin/config/alarm-log.html", ""], 
+      // ["", "", "팝업", "서버별 메일 발송여부", "", "skin/config/pop-send-mail.html", ""],           
+      // ["", "", "", "메일수신자", "", "skin/config/pop-mail-receiver.html", ""],           
+      // ["", "", "", "알림수신설정", "", "skin/config/pop-alarm-receive-setting.html", ""],           
+      // ["", "", "얼랏", "메일발송 테스트", "", "skin/config/alert-mail-list.html", ""],           
+
+      // ["", "사용자관리", "", "", "", "skin/config/user-manage.html", ""], 
+      // ["", "", "팝업", "그룹 추가", "", "skin/config/pop-group-add.html", ""],           
+      // ["", "", "", "사용자 추가 / 수정", "", "skin/config/pop-user.html", ""],           
+
+      // ["", "정보", "관리도구", "", "", "skin/config/management-tool.html", ""], 
+      // ["", "", "시스템", "", "", "skin/config/system.html", ""], 
+      // ["", "", "환경변수", "", "", "skin/config/environment-variable.html", ""], 
+      // ["", "", "오픈소스라이선스", "", "", "skin/config/open-source-license.html", ""], 
+      // ["", "", "재설정", "", "", "skin/config/reset.html", ""], 
+      // ["", "", "팝업", "Admin Log 수정", "", "skin/config/pop-admin-log.html", ""],           
+    ] 
+
+    for(var i = 0 ; i<= data.length -1 ; i++){
+      if(data[i][1] == 'title'){
+        $('tbody').append('<tr class="title">'+
+          '<td>'+data[i][0]+'</td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+          '<td></td>' +
+        '</tr>')
+      }else{
+        $('tbody').append('<tr>'+
+          '<td>'+data[i][0]+'</td>' +
+          '<td>'+data[i][1]+'</td>' +
+          '<td>'+data[i][2]+'</td>' +
+          '<td>'+data[i][3]+'</td>' +
+          '<td>'+data[i][4]+'</td>' +
+          '<td><a href="'+data[i][5]+'">'+data[i][5]+'</a></td>' +
+          '<td>'+data[i][6]+'</td>' +
+        '</tr>')
+      }
+    }
+  });
+</script>
+</head>
+<body>
+<!-- sheet -->
+<h1>Publishing Work Sheet &nbsp;&nbsp;</h1>
+
+<div class="mwork">
+  <table>
+    <colgroup>
+			<col style="width:140px" />
+			<col style="width:140px" />
+			<col style="width:160px" />
+			<col style="width:160px" />
+			<col style="width:160px" />
+			<col style="width:300px" />
+			<col style="width:auto" />
+    </colgroup>
+
+    <thead>
+      <tr>
+				<th>Category</th>
+				<th>1Depth</th>
+				<th>2Depth</th>
+				<th>3Depth</th>
+				<th>4Depth</th>
+				<th>FileName/Link</th>
+				<th>Memo</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- //sheet -->
+
+</body>
+</html>

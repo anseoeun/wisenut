@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-vocabulary">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-vocabulary');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">어휘 추가</strong>
+        </div>
+        <div class="pop-body">
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">검색어*</div></div>
+                <div class="form">
+                  <input type="text">
+                  <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">검색어*</div></div>
+                <div class="form">
+                  <input type="text" disabled>
+                  <p class="txt">어휘 길이는 검색 설정의 색인어 길이에 제한을 받습니다.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">동의어</div></div>
+                <div class="form">
+                  <input type="text">
+                  <p class="txt">2개 이상일 경우 ; 으로 구분</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">색인불용어 여부</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">검색금칙어 여부</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrap">
+            <div class="right"><button type="button" class="btn-type2 st1" onclick="popClose('#pop-vocabulary');">저장</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-vocabulary');
+  </script>
+
+</body>
+
+</html>

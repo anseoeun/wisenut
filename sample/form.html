@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/jquery-3.6.4.min.js"></script>
+<script src="../js/bootstrap-datepicker.js"></script>
+<script src="../js/jquery.minicolors.js"></script>
+<script src="../js/timepicki.js"></script>
+<script src="../js/ui.js"></script>
+</head>
+<body>
+<body style="padding:50px;">
+	<div class="inp-email">
+		<input type="text" class="addr"> <span class="a">@</span> <input type="text" class="provider">
+	</div>
+	<br>
+	<br>
+	<div class="inp-tel">
+		<input type="number"> 
+		<span class="dash"></span>
+		<input type="number">
+		<span class="dash"></span>
+		<input type="number">
+	</div>
+	<br>
+	<br>
+
+	<div class="paging-wrap">
+		<div class="left">
+			<button type="button" class="btn-type2 st5"><i class="ico-up2"></i>일괄 업로드</button>
+			<button type="button" class="btn-type2 st5"><i class="ico-dn2"></i>일괄 다운로드</button>
+		</div>
+		<div class="pagination">
+			<div class="paging">
+				<button class="btn-first"></button>
+				<button class="btn-prev"></button>
+				<div class="page">
+					<button>1</button>
+					<button class="on">2</button>
+					<button>3</button>
+					<button>4</button>
+					<button>5</button>
+				</div>
+				<button class="btn-next"></button>
+				<button class="btn-last"></button>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+	<br>
+
+	<ul class="tab-type1">
+		<li class="on"><a href="javascript:void(0);">일간</a></li>
+		<li><a href="javascript:void(0);">주간</a></li>
+		<li><a href="javascript:void(0);">월간</a></li>
+		<li><a href="javascript:void(0);">연간</a></li>
+		<li><a href="javascript:void(0);">직접선택</a></li>
+	</ul>
+	<br>
+	<br>
+	<div class="tab-type2">
+		<ul>
+			<li class="on"><a href="javascript:void(0);">인기쿼리</a></li>
+			<li><a href="javascript:void(0);">실패쿼리</a></li>
+		</ul>
+	</div>
+
+	<h2>input</h2>
+	<input type="text" value="cmanager">
+	<input type="text" value="cmanager" readonly>
+	<input type="text" value="cmanager" disabled>
+	<h2>password</h2>
+	<input type="password">
+	<h2>select</h2>
+	<select>
+		<option>select</option>
+    <option>select2</option>
+	</select>
+	<select disabled>
+		<option>select</option>
+    <option>select2</option>
+	</select>
+
+	<input type="text" class="colorpicker" data-control="hue" value="#ff6161">
+
+	<h2>checkbox</h2>
+	<div class="inp-chk-wrap">
+		<label class="inp-chk">
+				<span class="inp"><input type="checkbox"><span class="ic"></span></span>
+				<span class="t">마스터</span>
+		</label>
+		<label class="inp-chk">
+				<span class="inp"><input type="checkbox" disabled><span class="ic"></span></span>
+				<span class="t">disabled</span>
+		</label>
+		<label class="inp-chk">
+				<span class="inp"><input type="checkbox" readonly><span class="ic"></span></span>
+				<span class="t">readonly</span>
+		</label>
+	</div>
+
+	<h2>radio</h2>
+	<div class="inp-chk-wrap">
+		<label class="inp-chk">
+				<span class="inp"><input type="radio"><span class="ic"></span></span>
+				<span class="t">마스터</span>
+		</label>
+		<label class="inp-chk">
+				<span class="inp"><input type="radio" disabled><span class="ic"></span></span>
+				<span class="t">disabled</span>
+		</label>
+		<label class="inp-chk">
+				<span class="inp"><input type="radio" readonly><span class="ic"></span></span>
+				<span class="t">readonly</span>
+		</label>
+	</div>
+
+	<h2>textarea </h2>
+	<textarea style="width:100%;height:300px;" readonly></textarea>
+
+	<h2>토글</h2>
+	<label class="inp-range">
+		<input type="checkbox" class="btn_range">
+		<i></i>
+	</label>
+
+	<h2>달력</h2>
+	<span class="inp-date">
+		<div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+		<span class="dash">~</span>
+		<div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+	</span>
+	<span class="inp-date">
+		<div class="date disabled"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+		<span class="dash">~</span>
+		<div class="date disabled"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+	</span>
+
+	<h2>달력 range</h2>
+	<span class="inp-date input-daterange">
+		<div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+		<span class="dash">~</span>
+		<div class="date"><input type="text" class="datepicker"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+	</span>
+
+	<script>
+
+
+	</script>
+	<br>
+	<br>
+	<h2>시간</h2>
+	<div class="inp-time">
+    <div class="timepicker">
+      <input type="text" value="11 : 29" readonly data-timepicki-tim="10" data-timepicki-mini="29">
+    </div>
+    <span class="dash">~</span>
+    <div class="timepicker">
+      <input type="text" value="11 : 29" readonly data-timepicki-tim="11" data-timepicki-mini="15">
+    </div>
+  </div>
+	<div class="inp-time">
+    <div class="timepicker">
+      <input type="text" value="11 : 29" data-timepicki-tim="10" data-timepicki-mini="29" disabled>
+    </div>
+    <span class="dash">~</span>
+    <div class="timepicker">
+      <input type="text" value="11 : 29" data-timepicki-tim="11" data-timepicki-mini="15" disabled>
+    </div>
+  </div>
+
+	<br>
+	<br>
+
+	<div class="form-wrap">
+		<div class="col">
+			<div class="label">Color Pick</div>
+			<div class="form"><input type="text"></div>
+		</div>
+		<div class="col">
+			<div class="label">Color Pick</div>
+			<div class="form"><input type="text"></div>
+		</div>
+		<p class="txt">* 데이터베이스가 사용 가능한 상태인지 반드시 확인해 주세요.</p>
+	</div>
+	<br>
+	<br>
+	<div class="form-wrap">
+		<div class="tbl">
+			<div class="row">
+				<div class="label">프로그램</div>
+				<div class="form">
+					<div class="inp-chk-wrap">
+						<label class="inp-chk">
+								<span class="inp"><input type="radio"><span class="ic"></span></span>
+								<span class="t">마스터</span>
+						</label>
+						<label class="inp-chk">
+								<span class="inp"><input type="radio" disabled><span class="ic"></span></span>
+								<span class="t">disabled</span>
+						</label>
+						<label class="inp-chk">
+								<span class="inp"><input type="radio" readonly><span class="ic"></span></span>
+								<span class="t">readonly</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="label">기간</div>
+				<div class="form">
+					<div class="both-wrap">
+						<span class="inp-date">
+							<div class="cal"><input type="text" class="datepicker sm"></div>
+						</span>
+						<div class="right-area">
+							<button type="button" class="btn-type3 st1">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<div class="form-wrap">
+		<div class="col">
+			<div class="label-wrap">
+				<div class="label">Log Path</div>
+				<div class="right">
+					<button type="button" class="btn-type4 st1">찾기</button>
+				</div>
+			</div>
+			<div class="form"><input type="text"></div>
+		</div>
+		<div class="col">
+			<div class="label">Log Level</div>
+			<div class="form">
+				<div class="inp-chk-wrap">
+					<label class="inp-chk">
+							<span class="inp"><input type="radio"><span class="ic"></span></span>
+							<span class="t">마스터</span>
+					</label>
+					<label class="inp-chk">
+							<span class="inp"><input type="radio" disabled><span class="ic"></span></span>
+							<span class="t">disabled</span>
+					</label>
+					<label class="inp-chk">
+							<span class="inp"><input type="radio" readonly><span class="ic"></span></span>
+							<span class="t">readonly</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<p class="txt">* ERROR : 에러 메세지 출력</p>
+		<p class="txt">* WARN : 경고 메시지와 에러 메시지 출력</p>
+		<p class="txt">* INFO : 모든 메시지 출력 (표준, 경고, 에러)</p>
+		<p class="txt">* DEBUG : 디버그 메시지 출력</p>		
+	</div>
+
+</body>
+
+</html>

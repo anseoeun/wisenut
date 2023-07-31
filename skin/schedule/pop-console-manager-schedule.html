@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-console-manager-schedule">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:590px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-console-manager-schedule');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">스케줄</strong>
+        </div>
+        <div class="pop-body">
+          
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">서버</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">스케줄ID</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">프로그램 종류</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">프로그램 명</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">컬렉션아이디</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">색인모드</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">소스ID</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">소스타입</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">수집모드</div></div>
+                <div class="form">
+                  <select style="min-width:200px;">
+                    <option>select</option>
+                    <option>select2</option>
+                  </select>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">실행인자</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div> 
+              
+              <div class="row">
+                <div class="label wide"><div class="lab">실행 주기</div></div>
+                <div class="form">
+                  <div class="inp-chk-wrap">
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="cycle" value="day" checked><span class="ic"></span></span>
+                        <span class="t">매일</span>
+                    </label>
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="cycle" value="week"><span class="ic"></span></span>
+                        <span class="t">매주</span>
+                    </label>
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="cycle" value="month"><span class="ic"></span></span>
+                        <span class="t">매월</span>
+                    </label>
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="cycle" value="direct"><span class="ic"></span></span>
+                        <span class="t">직접입력</span>
+                    </label>
+                  </div>
+                  <!-- 매일 -->
+                  <ul class="chk-list cycle-day">
+                    <li>
+                      <div class="cell">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                        </label>
+                        <select style="min-width:55px;">
+                          <option>01</option>
+                          <option>12</option>
+                        </select>
+                        <span class="tt">시</span>
+                      </div>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>50</option>
+                          <option>59</option>
+                        </select>
+                        <span class="tt">분에</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cell">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio" name="t"><span class="ic"></span></span>
+                        </label>
+                        <span class="tt">매시</span>
+                      </div>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>50</option>
+                          <option>59</option>
+                        </select>
+                        <span class="tt">분 간격으로</span>
+                      </div>
+                    </li>      
+                  </ul>   
+                  <!-- 매주 -->   
+                  <ul class="chk-list cycle-week" style="display:none;">
+                    <li>
+                      <div class="inp-chk-wrap">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio" name="week" value="everyweek" checked><span class="ic"></span></span>
+                            <span class="t">매주</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inp-chk-wrap">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="radio" name="week" value="selectweek"><span class="ic"></span></span>
+                            <span class="t">주 선택</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="selectweek" style="display:none">
+                      <div class="inp-chk-wrap">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">첫째주</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">둘째주</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">셋째주</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">넷째주</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">다섯째주</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inp-chk-wrap">
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">일</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">월</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">화</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">수</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">목</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">금</span>
+                        </label>
+                        <label class="inp-chk">
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="t">토</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>01</option>
+                          <option>12</option>
+                        </select>
+                        <span class="tt">시</span>
+                      </div>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>50</option>
+                          <option>59</option>
+                        </select>
+                        <span class="tt">분에</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- 매월 -->
+                  <ul class="chk-list cycle-month" style="display:none;">
+                    <li>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>01</option>
+                          <option>12</option>
+                        </select>
+                        <span class="tt">일</span>
+                      </div>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>01</option>
+                          <option>12</option>
+                        </select>
+                        <span class="tt">시</span>
+                      </div>
+                      <div class="cell">
+                        <select style="min-width:55px;">
+                          <option>50</option>
+                          <option>59</option>
+                        </select>
+                        <span class="tt">분에</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="cycle-direct" style="display:none;">
+              <div class="rule-check">
+                <textarea style="height:80px;"></textarea>
+                <div class=" btn-wrap">
+                  <div class="right"><button type="button" class="btn-type4 st1">규칙검사</button></div>
+                </div>
+              </div>
+              <div class="help-text">
+                <strong class="c-red">[도움말]</strong>
+                <ul class="dash">
+                  <li>
+                    지정 날짜에 스케쥴 실행 : D 날짜 시 분
+                     <br>예) D 1 3 0 : 매월 1일 3시 0분
+                  </li>
+                  <li>
+                    지정 요일에 스케쥴 실행 : W 주 요일 시 분
+                    <br>예) W 2ND MON 3 0 : 매월 둘째주 월요일 3시 0분
+                  </li>
+                  <li>
+                    특수기호 : *(매), /(and) 예) D * 0/6/12/18 0 : 매일 0시, 6시, 12시, 18시 0분
+                    <br>예) W * SUN * 0: 매월 매주 일요일 매시 0분
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+            
+          
+          <div class="btn-wrap">
+            <p class="txt c-red">필수 영역을 모두 입력해주세요. </p>
+            <div class="right">
+              <button type="button" class="btn-type2 st1" onclick="popClose('#pop-console-manager-schedule');">저장</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-console-manager-schedule');
+
+    $('[name="cycle"]').on('change', function(){
+      let val = $(this).val();
+      console.log(val);
+      $('[class*=cycle-]').hide();
+      $('.cycle-'+val).show();
+    });
+    $('[name="week"]').on('change', function(){
+      let val = $(this).val();
+      console.log(val);
+      if(val == 'everyweek') $('.selectweek').hide();
+      else $('.selectweek').show();
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+    <script>
+      $('.header').load('../common/header.html', function(){
+        gnbMenu();
+      });
+    </script>
+  </div>
+	<!-- container -->
+	<div class="container">
+		<div class="container-head">
+			<div class="user-menu">
+				<ul>
+					<li><a href="javascript:void(0);">사용자명</a></li>
+					<li><a href="javascript:void(0);">로그아웃</a></li>
+					<li><a href="javascript:void(0);">정보수정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+      <h1 class="title-primary">검색추이</h1>
+
+      <div class="form-wrap main-form">
+        <div class="tbl">
+          <div class="row">
+            <div class="form">
+              <select>
+                <option>컬렉션 전체</option>
+                <option>컬렉션 전체2</option>
+              </select>
+              <ul class="tab-type1">
+                <li class="on"><a href="javascript:void(0);" onclick="$('#input-date').show();$('#input-daterange').hide();">일간</a></li>
+                <li><a href="javascript:void(0);" onclick="$('#input-date').show();$('#input-daterange').hide();">주간</a></li>
+                <li><a href="javascript:void(0);" onclick="$('#input-date').show();$('#input-daterange').hide();">월간</a></li>
+                <li><a href="javascript:void(0);" onclick="$('#input-date').show();$('#input-daterange').hide();">연간</a></li>
+                <li><a href="javascript:void(0);" onclick="$('#input-date').hide();$('#input-daterange').show();">직접선택</a></li>
+              </ul>
+              <span class="inp-date" id="input-date">
+                <div class="date"><input type="text" class="datepicker" value="2023-05-27"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                <span class="dash">~</span>
+                <div class="date"><input type="text" class="datepicker" value="2023-05-30"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+              </span>
+              <span class="inp-date input-daterange" id="input-daterange" style="display:none">
+                <div class="date"><input type="text" class="datepicker" value="2023-05-27"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+                <span class="dash">~</span>
+                <div class="date"><input type="text" class="datepicker" value="2023-05-30"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
+              </span>
+              <button type="button" class="btn-type1 st1 btn-search">조회</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-tit">검색추이 그래프</div>
+        <div class="box-cont">
+          <div class="chart" style="height:350px;">차트영역</div>
+          <p class="txt-chart-info">최종 Data 갱신시각 2023-05-12 14:39:58</p>
+        </div>
+      </div>
+      <!-- // data-box -->      
+
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-tit">검색추이 (조회기간 및 비교기간)
+          <div class="right">
+            <button class="btn-excel"><span>엑셀저장</span><i class="ico-save"></i></button>
+          </div>
+        </div>
+        <div class="box-cont">
+            <!-- table -->
+            <div class="data-type1">
+              <table>
+                  <colgroup>
+                      <col style="width:25%" />
+                      <col style="width:25%" />
+                      <col style="width:25%" />
+                      <col style="width:25%" />
+                  </colgroup>
+                  <thead>
+                      <tr>
+                        <th>기간</th>
+                        <th>2023-04-24</th>
+                        <th>2023-04-25</th>
+                        <th>증감율</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                        <td>12 : 00 ~ 13 : 00</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">3</td>
+                        <td class="align-r">33%</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <!-- //table -->
+            <div class="txt-data-bottom-wrap">
+              <p class="txt-data-bottom">* 예) 전년도대비 증감률(%) = (현재연도 - 전년도) / 전년도 * 100</p>
+              <p class="txt-data-bottom">* 예) 전월대비 증감률(%) = (현재월 - 전월) / 전월 * 100</p>
+              <p class="txt-data-bottom">* 예) 전주대비 증감률(%) = (현재주 - 전주) / 전주 * 100</p>
+              <p class="txt-data-bottom">* 예) 전일대비 증감률(%) = (현재일 - 전일) / 전일 * 100</p>
+            </div>
+        </div>
+      </div>
+      <!-- // data-box -->      
+    </div>
+		<!-- // content -->
+	</div>
+	<!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+
+
+
+</body>
+
+</html>

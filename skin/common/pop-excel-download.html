@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-excel-download">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-excel-download');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">엑셀 다운로드</strong>
+        </div>
+        <div class="pop-body">
+          <div class="excel-download-wrap">
+            <div class="text">
+              <b>엑셀문서 생성 및 다운로드를 실행하겠습니까?</b>
+              <p>
+                엑셀문서 생성은 데이터량에 따라 다소 오래 걸릴 수도 있으며, 백그라운드로 진행됩니다.
+                <br>생성 완료 후에는 하단 목록에 표시되며, 즉시 다운로드 받을 수 있습니다.
+              </p>
+              <div class="btn-wrap">
+                <button class="btn-type2 st1">엑셀문서 생성 실행</button>
+              </div>
+            </div>
+            <div class="download-list">
+              <div class="tit">다운로드 가능 목록</div>
+              <div class="list-box">
+                <ul>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                  <li><a href="javascript:void(0);">파일명.excel</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="download-list">
+              <div class="tit">다운로드 가능 목록</div>
+              <textarea readonly>textarea</textarea>
+            </div>
+          </div>
+              
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-excel-download');
+  </script>
+
+</body>
+
+</html>
