@@ -284,9 +284,6 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="row">
-                    * 각 랭킹요소는 중복될 수 없고 입력한 순서대로 적용됩니다. ex) prkfmo : p > r > k > f > m > o
-                  </div>
                 </div>
               </div>     
 
@@ -301,7 +298,7 @@
                   <input type="text" style="width:62px;">
                 </div>
               </div>     
-              <div class="row">
+              <div class="row mgt">
                 <div class="label wide2"><div class="lab">랭킹 적용키워드</div></div>
                 <div class="form">
                   <div class="row vt">
@@ -338,14 +335,51 @@
         <div class="right"><button type="button" class="btn-type1 st4">고급설정</button></div>
       </div>
 
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-tit">고급설정</div>
+        <div class="box-cont">
+          <div class="form-wrap wide-gap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide2"><div class="lab">ExQuery</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div>       
+              <div class="row">
+                <div class="label wide2"><div class="lab">FilterOperation</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div>       
+              <div class="row">
+                <div class="label wide2"><div class="lab">컬렉션쿼리</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div>       
+            </div>
+          </div>
+
+          <div class="txt-data-bottom-wrap">
+            <p class="txt-data-bottom">* 적용 가능한 필드는 아래와 같습니다.</p>
+            <p class="txt-data-bottom next-dash">- ExQuery필드 : passwordflag,attachflag,regclass</p>
+            <p class="txt-data-bottom next-dash">- FilterQuery필드 : wordtype,externaldocflag,approvaldate,approvaltype,approvalstatus</p>
+          </div>          
+        </div>
+        <!-- // box-cont -->
+      </div>
+      <!-- // data-box -->
+
       <div class="form-center">
         <div class="form-wrap main-form">
           <div class="form">
             <select>
-              <option>컬렉션 전체</option>
-              <option>컬렉션 전체2</option>
+              <option>UTF-8</option>
+              <option>UTF-8</option>
             </select>
-            <button type="button" class="btn-type1 st1">날짜 초기화</button>
+            <button type="button" class="btn-type1 st1 btn-date-init">날짜 초기화</button>
             <span class="inp-date">
               <div class="date"><input type="text" class="datepicker" value="2023-05-27"><span class="input-group-addon"><i class="ico-cal"></i></span></div>
               <span class="dash">~</span>

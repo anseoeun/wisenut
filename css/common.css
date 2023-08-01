@@ -211,6 +211,7 @@ input[type="password"]:disabled{background-color:#d9d9d9 !important;opacity: 1;}
 .form-wrap .tbl > .row .form  *  ~ .inp-chk-wrap{margin-top:10px;}
 .form-wrap .tbl > .row > .form  select  ~ select{margin-left:10px;}
 .form-wrap .tbl > .row:last-child > *{padding-bottom:0 !important;}
+.form-wrap .tbl > .row.mgt > *{padding-top:17px !important;}
 .form-wrap .tbl + .txt{margin-top:20px;}
 .form-wrap .row ~ .row{margin-top:25px;}
 .form-wrap .col ~ .col{margin-top:30px;}
@@ -220,8 +221,7 @@ input[type="password"]:disabled{background-color:#d9d9d9 !important;opacity: 1;}
 .form-wrap .col .label{width:100%;margin-bottom:5px;font-size:12px;}
 .form-wrap .col .form > *{width:100%;}
 .form-wrap .form > .row{display:flex;align-items:center;}
-.form-wrap .form > .row.vt{align-items: flex-start;margin-top:-5px;}
-.form-wrap .form > .row.vt .inp-chk-wrap + .inp-wrap{margin-top:-5px;}
+.form-wrap .form > .row.vt{align-items: flex-start;}
 .form-wrap .form .t-label{margin-right:15px;}
 .form-wrap .form .t-label + *{margin-left:0 !important;}
 .form-wrap .form * ~ .t-label{margin-left:35px !important;}
@@ -235,6 +235,7 @@ input[type="password"]:disabled{background-color:#d9d9d9 !important;opacity: 1;}
 .form-wrap .form .chk-list li{display:flex;align-items:center;}
 .form-wrap .form .chk-list li ~ li{margin-top:15px;}
 .form-wrap .form .chk-list li .cell{min-width:140px;}
+.form-wrap .form .chk-list li .cell2{min-width:160px;}
 .form-wrap .form .chk-list.cycle-month li .cell{min-width:120px;}
 .form-wrap .form .chk-list li .cell .inp-chk{margin-right:8px;}
 .form-wrap .form .chk-list li .cell .tt{margin-left:5px;}
@@ -259,6 +260,7 @@ input[type="password"]:disabled{background-color:#d9d9d9 !important;opacity: 1;}
 .form-wrap.wide-gap .tbl .row > .label,
 .form-wrap.wide-gap .tbl .row > .form{padding:12px 0;}
 .form-wrap.wide-gap .tbl .row > .form > .row > * ~ *{margin-left:20px;}
+.form-wrap.wide-gap .tbl .form * + .row{margin-top:20px;}
 .form-wrap .repeat-list{margin-top:-10px;}
 .form-wrap .repeat-list li{display:inline-block;margin-right:35px;padding:10px 0;}
 .form-wrap .cycle-direct{margin-top:20px;}
@@ -279,9 +281,10 @@ input[type="password"]:disabled{background-color:#d9d9d9 !important;opacity: 1;}
 .form-both > *{flex:1}
 .form-both > * ~ *{margin-left:75px;}
 
-.form-center{margin:50px auto;text-align:center;}
+.form-center{margin:60px auto;text-align:center;}
 .form-center .form-wrap{display:inline-block;margin:0 }
 .form-center .btn-wrap{margin-top:30px;}
+.form-center * + .btn-date-init{margin-left:50px !important;}
 
 .align-r{text-align: right !important;}
 .align-l{text-align: left !important;}
