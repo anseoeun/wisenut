@@ -95,7 +95,7 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .btn-wrap [class*=btn-type] ~ [class*=btn-type]{margin-left:13px;}
 .btn-wrap .left{margin-right:auto;}
 .btn-wrap .right{margin-left:auto;display:flex;align-items:center;}
-[class*=btn-type] {display:inline-block;text-align:center;align-items: center;justify-content: center;}
+[class*=btn-type] {display:inline-flex;text-align:center;align-items: center;justify-content: center;}
 [class*=btn-type]:disabled {background-color: #DDD !important;color: #aaaaac !important;border-color: #DDD !important;}
 [class*=btn-type].st1{border:1px solid #1C4E81;color: #fff;background:#1C4E81;}
 [class*=btn-type].st2{border:1px solid #B2B2B2;color: #fff;background:#B2B2B2;}
@@ -103,6 +103,7 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 [class*=btn-type].st4{color: #1C4E81;}
 [class*=btn-type].st5{border:1px solid #B2B2B2;color: #676A6C;background:#fff;}
 [class*=btn-type].full{width:100%;}
+[class*=btn-type] span{line-height:1;}
 [class*=btn-type] i:first-child{margin-right:3px;}
 .btn-type1{height:34px;line-height:32px;padding:0 10px;text-align:center;font-size:12px;border-radius: 4px;min-width: 70px;}
 .btn-type2{height:30px;line-height:28px;padding:0 10px;text-align:center;font-size:12px;border-radius: 4px;min-width: 70px;}
@@ -296,6 +297,7 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .data-type1 table td .depth1{text-align:left;}
 .data-type1 table td .depth1 .icon{display:inline-flex;width:30px;}
 .data-type1 table td .depth2{text-align:left;padding-left:50px;}
+.data-type1 table .t-wrap{display:inline-block;}
 .data-type1.st2{border-top:1px solid #b2b2b2;}
 .data-type1.st2 table th,
 .data-type1.st2 table td {font-size:13px;}
@@ -378,7 +380,7 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .move-data-wrap .data-list-box {flex:1;}
 .move-data-wrap .data-list-box .tit {display:block;margin-bottom:5px;}
 .move-data-wrap .data-list {border:1px solid #B2B2B2;height:220px;overflow-y:auto;}
-.move-data-wrap .data-list ul li {height:30px;border-bottom:1px solid #b2b2b2;}
+.move-data-wrap .data-list ul li {height:30px;}
 .move-data-wrap .data-list ul li > *{height:100%;width:100%;padding:0 15px;text-align:left;display:flex;align-items: center;font-size:12px;}
 .move-data-wrap .data-list ul li > * .right{margin-left:auto;}
 .move-data-wrap .data-list ul li.on{background:#1C4E81; color:#fff;}
@@ -464,7 +466,7 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .preview-wrap .txt{margin-bottom:17px;}
 .popular-search-list ol{border-top:1px solid #b2b2b2;}
 .popular-search-list ol li {min-height:34px;display:flex;align-items:center;border-bottom:1px solid #b2b2b2;padding:0 10px;}
-.popular-search-list ol li em {width:15px;height:15px;display:inline-flex;justify-content:center;align-items:center;margin-right:5px;border-radius:4px;background:#B2B2B2; color:#fff;font-weight:500;font-size:11px;letter-spacing: -0.05em;text-indent: -0.1em;}
+.popular-search-list ol li em {width:15px;height:15px;display:inline-flex;justify-content:center;align-items:center;padding-top:1px;margin-right:5px;border-radius:4px;background:#B2B2B2; color:#fff;font-weight:500;font-size:11px;letter-spacing: -0.05em;text-indent: -0.1em;}
 .popular-search-list ol li.on em {background:#1C4E81;}
 .popular-search-list ol li .right {margin-left:auto;}
 .popular-search-list ol li .right .dash {font-size:20px;}
@@ -514,7 +516,6 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .mail-reciver-wrap .reciver-box ~ .reciver-box{margin-left:18px;}
 .mail-reciver-wrap .reciver-box .tit {display:block;margin-bottom:10px;}
 .mail-reciver-wrap .reciver-box .box {border:1px solid #b2b2b2;height:220px;overflow:hidden;overflow-y:auto;}
-.mail-reciver-wrap .reciver-box .box .selc-list li {border-bottom:1px solid #b2b2b2;}
 .mail-reciver-wrap .reciver-box .box .selc-list li button {height:30px;padding:0 20px;width:100%;text-align:left;}
 .mail-reciver-wrap .reciver-box .box .selc-list li.on button {background:#1C4E81; color:#fff;}
 .mail-reciver-wrap .reciver-box .box .chk-list li {padding:0 20px;height:30px;display:flex;align-items:center;margin-top:0;}
@@ -542,3 +543,5 @@ i.status{display:inline-block;width:13px;height:13px;border-radius:100%;}
 .system-alarm-wrap .alarm-list > ul > li .list li .label { color:#4D9B7A;}
 .system-alarm-wrap .alarm-list > ul > li .list li .text {padding-left:5px;}
 .system-alarm-wrap .txt-bottom.c-red {margin-top:15px;}
+
+.text-box{border:1px solid #b2b2b2;border-radius:4px;padding:12px;overflow:hidden;overflow-y:auto;}

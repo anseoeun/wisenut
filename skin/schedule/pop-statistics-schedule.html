@@ -112,7 +112,7 @@
                     </span>
                     <div class="right">
                       <label class="inp-chk">
-                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                          <span class="inp"><input type="checkbox" name="alldate" checked><span class="ic"></span></span>
                           <span class="t">항상</span>
                       </label>
                     </div>
@@ -157,6 +157,11 @@
 
   <script>
     popOpen('#pop-statistics-schedule');
+
+    $('[name="alldate"]').on('change', function(){
+      if($(this).prop('checked')) $('.inp-date input').attr('disabled', 'disabled');
+      else $('.inp-date input').removeAttr('disabled');
+    });
   </script>
 
 </body>
