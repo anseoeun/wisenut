@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-program">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-program');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">프로그램 추가 / 수정</strong>
+        </div>
+        <div class="pop-body">
+          
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">프로그램명*</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">프로그램명*</div></div>
+                <div class="form">
+                  <input type="text" disabled>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Type*</div></div>
+                <div class="form">
+                  <div class="tbl">
+                    <div class="row">
+                      <div class="label">
+                        <div class="lab">
+                          <label class="inp-chk">
+                              <span class="inp"><input type="radio" name="program"><span class="ic"></span></span>
+                              <span class="t">서버프로그램</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form">
+                        <select style="min-width:190px;">
+                          <option>select</option>
+                          <option>select2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="label">
+                        <div class="lab">
+                          <label class="inp-chk">
+                              <span class="inp"><input type="radio" name="program"><span class="ic"></span></span>
+                              <span class="t">일반프로그램</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form">
+                        <select style="min-width:190px;" disabled>
+                          <option>select</option>
+                          <option>select2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">On Start</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                      <span class="t">설정</span>
+                  </label>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Auto Start</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                      <span class="t">설정</span>
+                  </label>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">알림 메일</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                      <span class="t">설정</span>
+                  </label>
+                  <p class="txt">해당 프로그램 오류시 알림메일 전송여부</p>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">모니터모드*</div></div>
+                <div class="form">
+                  <div class="inp-chk-wrap">
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                        <span class="t">Pid</span>
+                    </label>
+                    <label class="inp-chk">
+                        <span class="inp"><input type="radio" name="a"><span class="ic"></span></span>
+                        <span class="t">Port</span>
+                    </label>
+                  </div>
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Config Path*</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Script Path*</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">License Path*</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Log Path*</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Stdout Path*</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">Args</div></div>
+                <div class="form">
+                  <div class="row">
+                    <div class="auto">
+                      <input type="text">
+                    </div>
+                    <div class="right">
+                      <button class="btn-sarch-doc"><i class="ico-sarch-doc"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <p class="txt c-red">* 표시된 항목은 필수입력 항목입니다.</p>
+          </div>    
+            
+          
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-program');">적용</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-program');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-program');
+  </script>
+
+</body>
+
+</html>

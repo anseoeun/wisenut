@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-statistics-server">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-statistics-server');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">통계대상 서버 추가</strong>
+        </div>
+        <div class="pop-body">
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">Cmanager ID</div></div>
+                <div class="form">
+                  <select style="min-width:160px;">
+                    <option>cmanager</option>
+                    <option>cmanager</option>
+                  </select>
+                  <select style="min-width:160px;">
+                    <option>isc1</option>
+                    <option>isc1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">QueryLog Type</div></div>
+                <div class="form">
+                  <div class="inp-chk-wrap">
+                    <label class="inp-chk">
+                      <span class="t">common</span>
+                      <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                    </label>
+                    <label class="inp-chk">
+                      <span class="t">collection</span>
+                      <span class="inp"><input type="checkbox" name="a"><span class="ic"></span></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">Character Set</div></div>
+                <div class="form">
+                  <select style="min-width:160px;">
+                    <option>EUC-KR</option>
+                    <option>EUC-KR</option>
+                  </select>
+                  <p class="txt">검색페이지의 w3SetCodePage값과 동일해야 합니다.</p>
+                </div>
+              </div>
+            </div>
+            <p class="txt c-red">* 통계용 예제 데이터가 있습니다. 확인 버튼을 선택하면  데이터가 삭제됩니다.</p>
+          </div>    
+
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-statistics-server');">확인</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-statistics-server');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-statistics-server');
+  </script>
+
+</body>
+
+</html>

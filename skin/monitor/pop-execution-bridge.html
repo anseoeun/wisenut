@@ -17,11 +17,11 @@
 </head>
 <body>
 
-  <div class="layerpopup" id="pop-execution">
+  <div class="layerpopup" id="pop-execution-bridge">
     <div class="dim"></div>
     <div class="pop-wrap">
       <div class="popup" style="width:476px;">
-        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-execution');"></a>
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-execution-bridge');"></a>
         <div class="pop-body">
           <strong class="title">프로그램을 실행하겠습니까?</strong>
           <div class="form-wrap">
@@ -36,12 +36,26 @@
                 </div>
               </div>
               <div class="row">
-                <div class="label"><div class="lab">Target</div></div>
+                <div class="label"><div class="lab">로그 Type</div></div>
                 <div class="form">
                   <select style="min-width: 140px;">
                     <option>select</option>
                     <option>select2</option>
                   </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label"><div class="lab">필터링제거</div></div>
+                <div class="form">
+                  <label class="inp-chk">
+                    <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="label"><div class="lab">Argument</div></div>
+                <div class="form">
+                  <input type="text">
                 </div>
               </div>
             </div>
@@ -58,7 +72,7 @@
 
 
   <script>
-    popOpen('#pop-execution');
+    popOpen('#pop-execution-bridge');
   </script>
 
 </body>

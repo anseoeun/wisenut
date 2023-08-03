@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-label-add">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-label-add');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">라벨 추가</strong>
+        </div>
+        <div class="pop-body">
+          <p class="pop-top-txt">* 라벨 ID와 라벨 이름 입력 후 매칭시킬 컬렉션을 선택해 주세요. 한 ID에 다수의 컬렉션 그룹을 추가할 수 있습니다.</p>
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">라벨아이디</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row">
+                <div class="label wide"><div class="lab">라벨 이름</div></div>
+                <div class="form">
+                  <input type="text">
+                </div>
+              </div>
+            </div>
+          </div>  
+          <!-- move-data-wrap -->
+          <div class="move-data-wrap">
+            <div class="inp-chk-wrap">
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="label" value="1" checked><span class="ic"></span></span>
+                  <span class="t">목록선택</span>
+              </label>
+              <label class="inp-chk">
+                  <span class="inp"><input type="radio" name="label" value="2"><span class="ic"></span></span>
+                  <span class="t">직접입력</span>
+              </label>
+            </div>
+            <div class="move-data" id="list">
+              <div class="data-list-box">
+                  <p class="tit">컬렉션 목록</p>
+                  <div class="data-list">
+                    <ul>
+                      <li><button>collection</button></li>
+                      <li class="on"><button>collection</button></li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="arrow">
+                <button><i class="ico-data-right"></i></button>
+                <button><i class="ico-data-left"></i></button>
+              </div>
+              <div class="data-list-box">
+                  <p class="tit">선택 컬렉션</p>
+                  <div class="data-list">
+                    <ul>
+                      <li><button>sample</button></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="move-data" id="direct" style="display:none;">
+              <textarea style="height: 242px;"></textarea>
+            </div>
+            <div class="btn-group-add">
+              <button class="btn-type2 st1"><span>컬렉션 그룹 추가</span><i></i></button>
+            </div>
+            <div class="data-list" style="height:100px;">
+              <ul>
+                <li class="fix"><div class="item">컬렉션 그룹 <div class="right">관리</div></div></li>
+                <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+                <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+                <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+                <li><div class="item">sample <div class="right"><button><i class="ico-trash"></i></button></div></div></li>
+              </ul>
+            </div>
+          </div>
+          <!-- // move-data-wrap -->
+
+
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-label-add');">라벨 적용</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-label-add');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-label-add');
+    $('[ name="label"]').on('change', function(){
+        if($(this).val() == 1){
+          $('#list').show();
+          $('#direct').hide();
+        }else{
+          $('#list').hide();
+          $('#direct').show();
+        }
+      });    
+  </script>
+
+</body>
+
+</html>

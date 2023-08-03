@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-info-modify">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-info-modify');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">정보 수정</strong>
+        </div>
+        <div class="pop-body">
+          
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">목록개수</div></div>
+                <div class="form">
+                  <div class="row">
+                    <span class="t-label">상단 : </span>
+                    <input type="text" style="width:114px;">
+                    <span class="t-label">하단 : </span>
+                    <input type="text" style="width:114px;">
+                  </div>
+                  <p class="txt">* 상/하단 합이 20이하</p>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">최대 노출 글자수</div></div>
+                <div class="form">
+                  <input type="text" style="width:190px">
+                  <span class="tt">자</span>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">글자 색상</div></div>
+                <div class="form">
+                  <input type="text" class="colorpicker" data-control="hue" value="#ff6161" style="width:190px;">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div class="lab">글자 크기</div></div>
+                <div class="form">
+                  <select style="min-width:190px;">
+                    <option>13px</option>
+                    <option>14px</option>
+                  </select>
+                </div>
+              </div>  
+            </div>
+          </div>      
+            
+          
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-info-modify');">확인</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-info-modify');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-info-modify');
+  </script>
+
+</body>
+
+</html>

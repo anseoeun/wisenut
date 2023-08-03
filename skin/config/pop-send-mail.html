@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-send-mail">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:420px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-send-mail');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">서버별 메일 발송여부</strong>
+        </div>
+        <div class="pop-body">
+          
+          <ul class="check-list">
+            <li>
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">Administrator</span>
+              </label>
+            </li>
+            <li>
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">user</span>
+              </label>
+            </li>
+            <li>
+              <label class="inp-chk">
+                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                  <span class="t">malee</span>
+              </label>
+            </li>
+          </ul>      
+          
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-send-mail');">확인</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-send-mail');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-send-mail');
+  </script>
+
+</body>
+
+</html>

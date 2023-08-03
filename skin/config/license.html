@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+    <script>
+      $('.header').load('../common/header.html', function(){
+        gnbMenu();
+      });
+    </script>
+  </div>
+	<!-- container -->
+	<div class="container">
+		<div class="container-head">
+			<div class="user-menu">
+				<ul>
+					<li><a href="javascript:void(0);">사용자명</a></li>
+					<li><a href="javascript:void(0);">로그아웃</a></li>
+					<li><a href="javascript:void(0);">정보수정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+      <h1 class="title-primary">시스템환경</h1>
+
+      <div class="tab-type2">
+        <ul>
+          <li><a href="javascript:void(0);">콘솔매니저</a></li>
+          <li><a href="javascript:void(0);">DB환경</a></li>
+          <li><a href="javascript:void(0);">통계규칙</a></li>
+          <li><a href="javascript:void(0);">통계환경</a></li>
+          <li class="on"><a href="javascript:void(0);">라이선스</a></li>
+        </ul>
+      </div>
+
+      <p class="txt-data-box-top">* 라이선스 정보를 확인해 주십시오. 만료기한이 30일 이내로 남은 경우 경고등이 표시됩니다.라이선스 선택 후 갱신해 주십시오.</p>
+      <!-- data-box -->
+      <div class="data-box">
+        <div class="box-tit">dev
+          <div class="right">
+            <i class="status" style="background-color: #ff0000;"></i>
+          </div>
+        </div>
+        <div class="box-cont">
+
+          <div class="grid-txt-list">
+            <ul>
+              <li>
+                <div class="left">Server</div><div class="right">cmanager</div>
+              </li>
+              <li>
+                <div class="left">만료기한</div> <div class="right"><span class="c-red">2023-06-30</span></div>
+              </li>
+              <li>
+                <div class="left">제한색인건수</div> <div class="right">0</div>
+              </li>
+              <li>
+                <div class="left">언어</div> <div class="right">Korean/ English/ Japanese/ Chinese</div>
+              </li>
+            </ul>
+            <div class="btn-wrap">
+              <div class="left"><button type="button" class="btn-type2 st1">라이선스 갱신</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- // data-box -->   
+      
+    </div>
+		<!-- // content -->
+	</div>
+	<!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+
+</body>
+
+</html>

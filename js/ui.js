@@ -18,10 +18,7 @@ function gnbMenu(){
 		let $this = $(this).parent('li');
 		let $siblings = $(this).parent('li').siblings();
 
-		if($this.hasClass('on')){
-			$this.find('svg').addClass('on');
-			return;
-		}
+		if($this.hasClass('on')) return;
 		$siblings.not('.on').find('ul').slideUp();
 		$siblings.not('.on').removeClass('open');
 
@@ -46,7 +43,28 @@ function tabOn(){
 
 function colorPicker(){
 	if($('.colorpicker').length <= 0) return;
-  $('.colorpicker').minicolors();
+	document.querySelectorAll('.colorpicker').forEach(el =>{
+		let top, pannel;
+		$(el).minicolors({
+			show: function() {
+				top = this.getBoundingClientRect().top + 44;
+				pannel = this.parentNode.querySelector('.minicolors-panel');
+				$(pannel).css({top: top});
+				pannel.style.opacity = 1
+				window.addEventListener('scroll', function() {
+					pannel.style.display = 'none';
+					$('.colorpicker').blur()
+				});
+			},
+			hide: function(){
+				pannel.style.opacity = 0
+			}
+		});
+		top = el.getBoundingClientRect().top + 44;
+		pannel = el.parentNode.querySelector('.minicolors-panel');
+		pannel.style.opacity = 0
+		$(pannel).css({top: top});
+	})
 }
 
 function timepicker(){

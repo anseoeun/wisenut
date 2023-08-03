@@ -38,39 +38,59 @@
 		</div>
 		<!-- content -->
 		<div class="content">
-      <div class="title-wrap">
-        <h1 class="title-primary">오타교정</h1>
-        <div class="right">
-          <button type="button" class="btn-type1 st4">가져오기</button>
-          <button type="button" class="btn-type1 st1">동기화</button>
-        </div>
+      <h1 class="title-primary">시스템환경</h1>
+
+      <div class="tab-type2">
+        <ul>
+          <li><a href="javascript:void(0);">콘솔매니저</a></li>
+          <li><a href="javascript:void(0);">DB환경</a></li>
+          <li><a href="javascript:void(0);">통계규칙</a></li>
+          <li class="on"><a href="javascript:void(0);">통계환경</a></li>
+          <li><a href="javascript:void(0);">라이선스</a></li>
+        </ul>
       </div>
 
+      <p class="txt-data-box-top">* 통계 환경을 관리할 수 있습니다. 수정된 정보는 다음 실행시 반영됩니다.</p>
       <!-- data-box -->
       <div class="data-box">
+        <div class="box-tit">통계</div>
         <div class="box-cont">
-          <div class="data-top">
-            <select>
-              <option>정타 키워드</option>
-              <option>정타 키워드2</option>
-            </select>
-            <div class="form-search">
-              <input type="text">
-              <button class="btn-type1 st1">검색</button>
+
+          <div class="grid-txt-list">
+            <ul>
+              <li>
+                <div class="left">포트</div><div class="right">6.5.0</div>
+              </li>
+              <li>
+                <div class="left">JAVA  프로세스 메모리</div> <div class="right">6.5.0</div>
+              </li>
+              <li>
+                <div class="left">로그 레벨</div> <div class="right">127.0.0.1</div>
+              </li>
+              <li>
+                <div class="left">로그 타입</div> <div class="right">7300</div>
+              </li>
+              <li>
+                <div class="left">인기검색어 목록 최소 개수</div> <div class="right">utf-8</div>
+              </li>
+            </ul>
+            <div class="btn-wrap">
+              <div class="left"><button type="button" class="btn-type2 st1">수정</button></div>
             </div>
+          </div>
+
+          <div class="data-top">
             <div class="right">
               <button type="button" class="btn-type2 st1"><i class="ico-plus"></i>추가</button>
               <button type="button" class="btn-type2 st5"><i class="ico-trash3"></i>삭제</button>
             </div>
           </div>
-          <!-- // dictionary-wrap -->
-
           <!-- table -->
           <div class="data-type1">
             <table>
                 <colgroup>
                     <col style="width:100px" />
-                    <col style="width:100px" />
+                    <col style="width:auto" />
                     <col style="width:auto" />
                     <col style="width:auto" />
                     <col style="width:auto" />
@@ -80,86 +100,61 @@
                     <tr>
                         <th>
                           <label class="inp-chk">
-                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
                           </label>
                         </th>
-                        <th>NO</th>
-                        <th><span class="arr-align">정타 키워드<i class="ico-dn"></i></span></th>
-                        <th>가중치</th>
-                        <th>오타 키워드</th>
-                        <th><span class="arr-align">등록일<i class="ico-up"></i></span></th>
+                        <th>Cmanager ID</th>
+                        <th>Type</th>
+                        <th>ISC ID</th>
+                        <th>Character Set</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                       <tr>
                         <td>
                           <label class="inp-chk">
-                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
                           </label>
                         </td>
-                        <td>1000</td>
-                        <td><span class="c-navy">사과</span></td>
-                        <td>55</td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="ico-pen"></i></button></td>
                       </tr>
                       <tr>
                         <td>
                           <label class="inp-chk">
-                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
                           </label>
                         </td>
-                        <td>1000</td>
-                        <td>사과</td>
-                        <td>55</td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="ico-pen"></i></button></td>
                       </tr>
                       <tr>
                         <td>
                           <label class="inp-chk">
-                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
                           </label>
                         </td>
-                        <td>1000</td>
-                        <td>사과</td>
-                        <td>55</td>
                         <td></td>
                         <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button><i class="ico-pen"></i></button></td>
                       </tr>
                 </tbody>
             </table>
           </div>
-          <!-- //table -->
-
-          <div class="paging-wrap">
-            <div class="left">
-              <button type="button" class="btn-type2 st5"><i class="ico-up2"></i>일괄 업로드</button>
-              <button type="button" class="btn-type2 st5"><i class="ico-dn2"></i>일괄 다운로드</button>
-            </div>
-            <div class="pagination">
-              <div class="paging">
-                <button class="btn-first"></button>
-                <button class="btn-prev"></button>
-                <div class="page">
-                  <button>1</button>
-                  <button class="on">2</button>
-                  <button>3</button>
-                  <button>4</button>
-                  <button>5</button>
-                </div>
-                <button class="btn-next"></button>
-                <button class="btn-last"></button>
-              </div>
-            </div>
-          </div>
-
-          <div class="txt-data-bottom-wrap">
-            <p class="txt-data-bottom">* 키워드 수정, 삭제 후에는 반드시 동기화를 실행해야 적용됩니다.</p>
-          </div>
+          <!-- //table -->          
         </div>
       </div>
-      <!-- // data-box -->
+      <!-- // data-box -->   
+      
     </div>
 		<!-- // content -->
 	</div>
@@ -167,8 +162,6 @@
 
 </div>
 <!-- // wrap -->
-
-
 
 
 </body>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+
+  <div class="layerpopup" id="pop-group-add">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup" style="width:580px;">
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-group-add');"></a>
+        <div class="pop-header">
+          <strong class="pop-tit">그룹 추가</strong>
+        </div>
+        <div class="pop-body">
+          
+          <div class="form-wrap">
+            <div class="tbl">
+              <div class="row">
+                <div class="label wide"><div class="lab">그룹명*</div></div>
+                <div class="form">
+                  <input type="text">
+                  <p class="txt c-red">중복된 그룹명입니다.</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+        
+          <div class="menu-access-wrap">
+            <p class="txt">메뉴 액세스 권한*</p>
+            <!-- table -->
+            <div class="data-type1" style="max-height: 400px;">
+              <table>
+                  <colgroup>
+                      <col style="width:auto" />
+                      <col style="width:15%" />
+                      <col style="width:15%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>권한항목</th>
+                      <th>
+                        <label class="inp-chk">
+                            <span class="t">읽기</span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </th>
+                      <th>
+                        <label class="inp-chk">
+                            <span class="t">쓰기</span>
+                            <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="depth1"><span class="icon"><i class="ico-monitor"></i></span>모니터링</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">하드웨어</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">서버프로그램</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">일반프로그램</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">수집색인배포현황</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth1"><span class="icon"><i class="ico-statistics"></i></span>통계</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">검색추이</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">검색어순위</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">컬렉션순위</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth1"><span class="icon"><i class="ico-service"></i></span>서비스관리</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">검색추이</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="depth2">검색추이</div>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                      <td>
+                        <label class="inp-chk">
+                          <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                        </label>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+            </div>
+            <!-- //table -->
+          </div>      
+          
+          <div class="btn-wrap">
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-group-add');">적용</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-group-add');">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    popOpen('#pop-group-add');
+  </script>
+
+</body>
+
+</html>

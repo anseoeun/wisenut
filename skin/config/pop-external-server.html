@@ -17,39 +17,44 @@
 </head>
 <body>
 
-  <div class="layerpopup" id="pop-scd-modify">
+  <div class="layerpopup" id="pop-external-server">
     <div class="dim"></div>
     <div class="pop-wrap">
       <div class="popup" style="width:580px;">
-        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-scd-modify');"></a>
+        <a href="javascript:void(0);" class="close type2" onclick="popClose('#pop-external-server');"></a>
         <div class="pop-header">
-          <strong class="pop-tit">SCD 수정</strong>
+          <strong class="pop-tit">외부서버 추가</strong>
         </div>
         <div class="pop-body">
           
           <div class="form-wrap">
             <div class="tbl">
               <div class="row">
-                <div class="label"><div class="lab">경로</div></div>
+                <div class="label wide"><div class="lab">서버이름</div></div>
                 <div class="form">
                   <input type="text">
                 </div>
               </div> 
               <div class="row">
-                <div class="label"><div class="lab">내용</div></div>
+                <div class="label wide"><div class="lab">서버IP(도메인)</div></div>
                 <div class="form">
-                  <textarea style="height:160px;"></textarea>
-                  <p class="txt">
-                    선택한 문서를 삭제하거나 수정하면 해당 컬렉션의 SCD 디렉토리에 SCD가 생성됩니다.
-                    <br>검색에 적용시키기 위해서는 해당 컬렉션의 색인작업이 수행되어야 합니다.
-                  </p>
+                  <input type="text">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="label wide"><div  class="lab">캐시서버포트</div></div>
+                <div class="form">
+                  <input type="text">
                 </div>
               </div> 
             </div>
-          </div>  
+            <p class="txt c-red">* 정보 입력 후에는 반드시 연결테스트를 실행해 주세요.</p>
+          </div>      
+            
           
           <div class="btn-wrap">
-            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-scd-modify');">확인</button>
+            <button type="button" class="btn-type2 st1" onclick="popClose('#pop-external-server');">연결테스트</button>
+            <button type="button" class="btn-type2 st2" onclick="popClose('#pop-external-server');">취소</button>
           </div>
         </div>
       </div>
@@ -58,7 +63,7 @@
 
 
   <script>
-    popOpen('#pop-scd-modify');
+    popOpen('#pop-external-server');
   </script>
 
 </body>

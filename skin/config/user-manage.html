@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+
+<link type="text/css" rel="stylesheet" href="../../css/bootstrap-datepicker.css" />
+<link type="text/css" rel="stylesheet" href="../../css/jquery.minicolors.css" />
+<link type="text/css" rel="stylesheet" href="../../css/timepicki.css" />
+<link type="text/css" rel="stylesheet" href="../../css/style.css" />
+<script src="../../js/jquery-3.6.4.min.js"></script>
+<script src="../../js/bootstrap-datepicker.js"></script>
+<script src="../../js/jquery.minicolors.js"></script>
+<script src="../../js/timepicki.js"></script>
+<script src="../../js/ui.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+	<div class="header">
+    <script>
+      $('.header').load('../common/header.html', function(){
+        gnbMenu();
+      });
+    </script>
+  </div>
+	<!-- container -->
+	<div class="container">
+		<div class="container-head">
+			<div class="user-menu">
+				<ul>
+					<li><a href="javascript:void(0);">사용자명</a></li>
+					<li><a href="javascript:void(0);">로그아웃</a></li>
+					<li><a href="javascript:void(0);">정보수정</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="content">
+      <h1 class="title-primary">사용자관리</h1>
+
+      <div class="data-box-wrap both-wrap">
+        <div class="left-side" style="width:350px;">
+            <!-- data-box -->
+            <div class="data-box">
+              <div class="box-tit">그룹 목록</div>
+              <div class="box-cont">
+                <div class="data-top">
+                  <div class="right">
+                    <button type="button" class="btn-type2 st1"><i class="ico-plus"></i>추가</button>
+                  </div>
+                </div>
+                <!-- table -->
+                <div class="data-type1">
+                  <table>
+                      <colgroup>
+                          <col style="width:auto" />
+                          <col style="width:80px" />
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th class="align-l">그룹명</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>
+                              <div class="depth1"><span class="icon"><i class="ico-folder"></i></span>전체</div>
+                            </td>
+                            <td class="align-r"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="depth1"><span class="icon"><i class="ico-folder"></i></span>AdminGroup</div>
+                            </td>
+                            <td class="align-r"></td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="depth1"><span class="icon"><i class="ico-folder"></i></span>USER</div>
+                            </td>
+                            <td class="align-r">
+                              <button><i class="ico-pen"></i></button>
+                              <button><i class="ico-trash3"></i></button>
+                            </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+                <!-- //table -->
+              </div>
+            </div>
+            <!-- // data-box -->
+        </div>
+        <div class="right-side auto">
+            <!-- data-box -->
+            <div class="data-box">
+              <div class="box-tit">사용자 목록</div>
+              <div class="box-cont">
+                <div class="data-top">
+                  <div class="right">
+                    <button type="button" class="btn-type2 st1"><i class="ico-plus"></i>추가</button>
+                    <button type="button" class="btn-type2 st5"><i class="ico-trash3"></i>삭제</button>
+                  </div>
+                </div>
+                <!-- table -->
+                <div class="data-type1">
+                  <table>
+                      <colgroup>
+                          <col style="width:80px" />
+                          <col style="width:12%" />
+                          <col style="width:12%" />
+                          <col style="width:12%" />
+                          <col style="width:auto" />
+                          <col style="width:18%" />
+                          <col style="width:10%" />
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th>
+                                <label class="inp-chk">
+                                  <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                                </label>
+                              </th>
+                              <th>사용자 ID</th>
+                              <th>이름</th>
+                              <th>그룹</th>
+                              <th>이메일</th>
+                              <th>전화번호</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            </label>
+                          </td>
+                          <td>id6789</td>
+                          <td>김OO</td>
+                          <td>USER</td>
+                          <td>id6789@wisenut.co.kr</td>
+                          <td>010-0000-0000</td>
+                          <td><button><i class="ico-pen"></i></button></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <label class="inp-chk">
+                              <span class="inp"><input type="checkbox"><span class="ic"></span></span>
+                            </label>
+                          </td>
+                          <td>id6789</td>
+                          <td>김OO</td>
+                          <td>USER</td>
+                          <td>id6789@wisenut.co.kr</td>
+                          <td>010-0000-0000</td>
+                          <td><button><i class="ico-pen"></i></button></td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </div>
+                <!-- //table -->
+                <div class="paging-wrap">
+                  <div class="pagination">
+                    <div class="paging">
+                      <button class="btn-first"></button>
+                      <button class="btn-prev"></button>
+                      <div class="page">
+                        <button>1</button>
+                        <button class="on">2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                      </div>
+                      <button class="btn-next"></button>
+                      <button class="btn-last"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- // data-box -->
+        </div>
+      </div>
+      <!-- // data-box-wrap -->
+
+  
+    </div>
+		<!-- // content -->
+	</div>
+	<!-- // container -->
+
+</div>
+<!-- // wrap -->
+
+
+</body>
+
+</html>
